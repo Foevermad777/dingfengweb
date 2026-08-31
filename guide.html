@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>水泵选型知识与常见问题 · 流量扬程怎么算 | 鼎烽机电商行</title>
+<meta name="description" content="水泵选型入门：流量和扬程怎么算、220V还是380V、口径怎么定、潜水泵和自吸泵怎么选、深井泵怎么量井、消防泵型号怎么读、水泵不上水的原因。佛山南海鼎烽机电商行 13690528818。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/product.css">
+<style>
+.gwrap{display:grid;grid-template-columns:230px 1fr;gap:40px;align-items:start}
+.toc{position:sticky;top:calc(var(--nav-h) + 20px);display:grid;gap:2px}
+.toc a{text-decoration:none;color:var(--ink-2);font-size:14px;padding:7px 11px;border-radius:8px;
+  border-left:2px solid transparent;transition:background .15s,color .15s}
+.toc a:hover{background:var(--card);color:var(--ink)}
+.toc a.on{color:var(--blue-ink);border-left-color:var(--blue-ink);background:var(--blue-wash);font-weight:500}
+.q{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:24px 26px;
+  margin-bottom:16px;scroll-margin-top:calc(var(--nav-h) + 16px)}
+.q h2{font-size:20px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
+.q .kk{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--ink-3);
+  text-transform:uppercase;margin-bottom:10px}
+.q .prose{max-width:none}
+.formula{background:var(--void);color:#EAF1F7;border-radius:10px;padding:15px 18px;margin:14px 0;
+  font-family:var(--mono);font-size:14px;line-height:1.9;overflow-x:auto}
+.formula b{color:#6FA8E0;font-weight:500}
+.formula em{color:#E5A277;font-style:normal}
+.tips{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:14px}
+.tip{background:var(--paper);border:1px solid var(--line-2);border-radius:9px;padding:12px 14px;
+  font-size:14px;color:var(--ink-2)}
+.tip b{display:block;color:var(--ink);font-size:14.5px;margin-bottom:3px}
+.warn{background:#FBEDE7;border:1px solid #EEC9B7;border-left:3px solid var(--rust);border-radius:9px;
+  padding:13px 16px;margin-top:14px;font-size:14.5px;color:var(--ink)}
+.warn b{color:var(--rust-ink)}
+@media (max-width:900px){.gwrap{grid-template-columns:1fr;gap:20px}.toc{position:static;
+  display:flex;flex-wrap:wrap;gap:6px}.toc a{border-left:none;border:1px solid var(--line);font-size:13px}}
+</style>
+</head>
+<body class="page">
+
+<header class="phead">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">首页</a><i>/</i>选型知识</div>
+    <h1>选型知识 / 常见问题</h1>
+    <div class="ptag">
+      <span class="chip rust">20 年门店经验整理</span>
+      <span class="chip">看完能自己算个八九不离十</span>
+    </div>
+    <p class="plede">不是教科书，是我们在柜台上被问了二十年的那些问题。看完还是拿不准，直接打电话——报工况比看半天资料快。</p>
+  </div>
+</header>
+
+<div class="wrap sect">
+  <div class="gwrap">
+    <nav class="toc" id="toc">
+      <a href="#q1">流量和扬程怎么算</a>
+      <a href="#q2">220V 还是 380V</a>
+      <a href="#q3">口径怎么定</a>
+      <a href="#q4">潜水泵还是自吸泵</a>
+      <a href="#q5">排污泵选普通还是切割</a>
+      <a href="#q6">深井泵怎么量井</a>
+      <a href="#q7">消防泵型号怎么读</a>
+      <a href="#q8">型号后面的字母是什么</a>
+      <a href="#q9">水泵不上水，先查这几样</a>
+      <a href="#q10">泵越大越好吗</a>
+    </nav>
+
+    <div>
+      <article class="q" id="q1">
+        <div class="kk">01 · 最常问的</div>
+        <h2>流量和扬程怎么算</h2>
+        <div class="prose">
+          <p>这两个数定下来，型号基本就出来了。<strong>流量</strong>是每小时要抽多少水（m³/h），<strong>扬程</strong>是水要被推多高（m）。</p>
+          <p><strong>流量</strong>按用水量倒推：一个水池 30 立方，想 2 小时抽干，就是 15 m³/h。生活给水按用水点算，一个普通水龙头约 0.6 m³/h。</p>
+          <p><strong>扬程不等于楼高</strong>——这是最容易错的地方。真实扬程要加上管路阻力：</p>
+          <div class="formula">
+            扬程 = <b>实际提升高度</b>（水面到出水口的垂直距离）<br>
+            　　＋ <b>管路损失</b>（经验值：管长每 100 米 ≈ 加 5～10 米）<br>
+            　　＋ <b>出口所需压力</b>（要有冲力的话，1 公斤压力 ≈ <em>10 米</em>）
+          </div>
+          <p>举个例子：地下室抽到 6 楼楼顶水箱，垂直高度约 20 米，管子走了 40 米、拐了七八个弯，再留点余量——扬程按 30 米选，不要按 20 米选。</p>
+          <div class="warn"><b>常见错误　</b>只按楼高选扬程，装上去发现水上不去楼顶。宁可扬程留一点余量，也不要刚好卡着。</div>
+        </div>
+      </article>
+
+      <article class="q" id="q2">
+        <div class="kk">02 · 电源</div>
+        <h2>220V 还是 380V</h2>
+        <div class="prose">
+          <p>看你现场有什么电。家里、店铺一般只有 220V 单相；工厂、工地、农田机井多数有 380V 三相。</p>
+          <div class="tips">
+            <div class="tip"><b>220V 单相</b>家用、小型场合。功率一般到 2.2kW 封顶，再大单相电机启动电流太大，容易跳闸。型号里常带 <span class="mono">D</span>，比如 QDX、WQD、50WQD。</div>
+            <div class="tip"><b>380V 三相</b>功率大、效率高、更省电，同功率下电流小、发热少。工程上基本都用这个。型号里不带 D，比如 QX、WQ、50WQ。</div>
+          </div>
+          <p>同一个规格常常两种都有，只差一个字母。<strong>买之前一定确认现场电源</strong>——380V 的泵接到 220V 上不转，220V 的泵接到 380V 上直接烧。</p>
+        </div>
+      </article>
+
+      <article class="q" id="q3">
+        <div class="kk">03 · 管路</div>
+        <h2>口径怎么定</h2>
+        <div class="prose">
+          <p>口径（也叫配管、通径）就是进出水口的直径，单位毫米。50 就是 2 寸，80 是 3 寸，100 是 4 寸。</p>
+          <p>原则是<strong>口径跟着流量走，不要跟着功率走</strong>。流量大就得配粗管，管子细了流速太快、阻力猛涨，泵再有劲也压不出去，还容易震动和汽蚀。</p>
+          <div class="tips">
+            <div class="tip"><b>粗略对应</b>10 m³/h 以内配 50（2寸）；10–30 配 65–80（2.5–3寸）；30–60 配 100（4寸）；100 以上配 150（6寸）起。</div>
+            <div class="tip"><b>已有管道</b>如果管路已经埋好了，直接按现有管径选泵口径，别想着变径——变径接头是阻力大户。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" id="q4">
+        <div class="kk">04 · 泵型</div>
+        <h2>潜水泵还是自吸泵</h2>
+        <div class="prose">
+          <p>核心区别是<strong>泵放在水里还是水面上</strong>。</p>
+          <div class="tips">
+            <div class="tip"><b>潜水泵</b>整机泡在水里。不用引水、启动就出水、不占地面、噪音小。缺点是检修要把泵吊上来，电缆是易损点。深水、污水坑首选。</div>
+            <div class="tip"><b>自吸泵</b>泵装在液面以上。检修方便、随时能看到，缺点是<strong>吸程有限</strong>——一般 4～5 米以内，泵放太高就吸不上来了，第一次用还要先灌水引流。</div>
+          </div>
+          <p>判断很简单：水面到泵的落差<strong>超过 5 米就别用自吸泵</strong>，改潜水泵或液下泵。经常要检修、水质腐蚀性强的，尽量用自吸或液下，别让电机泡在里面。</p>
+        </div>
+      </article>
+
+      <article class="q" id="q5">
+        <div class="kk">05 · 排污</div>
+        <h2>排污泵选普通、切割还是搅拌</h2>
+        <div class="prose">
+          <p>看抽的东西里有什么。</p>
+          <div class="tips">
+            <div class="tip"><b>普通 WQ</b>大流道叶轮，能过一定粒径的固体。适合一般生活污水、雨水、工地泥水。</div>
+            <div class="tip"><b>切割型 WQG / QGWQ</b>前端带刀盘，先绞碎再排。抽<strong>纤维、毛发、布条、塑料袋、卫生巾</strong>这类必须选切割型，不然三天两头堵。</div>
+            <div class="tip"><b>搅拌型 JYWQ</b>底部有搅拌装置，把沉底的稠泥搅起来一起抽。化粪池、沉淀池、养殖场粪污用这个。</div>
+          </div>
+          <div class="warn"><b>血泪经验　</b>小区地下室和公厕的污水泵，只要接了厕所，就上切割型。省那点钱，后面清堵的人工费和骂声都不止。</div>
+        </div>
+      </article>
+
+      <article class="q" id="q6">
+        <div class="kk">06 · 深井</div>
+        <h2>深井泵怎么量井、怎么选</h2>
+        <div class="prose">
+          <p>三个数，量准了就不会买错。</p>
+          <div class="formula">
+            ① <b>井管内径</b>　决定泵能不能放进去。泵体外径必须小于井管内径。<br>
+            　 4 寸井（内径约 100mm）→ 选 <em>100 系列</em>（外径 98–100mm）<br>
+            　 5–6 寸井 → 可选 <em>130 / 135 系列</em>（外径 127–144mm）<br><br>
+            ② <b>动水位</b>　抽水时水面稳定下来的深度，不是静止水位。<br>
+            ③ <b>需要的总扬程</b> = 动水位深度 ＋ 地面到水塔/出水点高度 ＋ 管路损失
+          </div>
+          <p>泵要下到动水位以下 1～3 米，但不要贴着井底——离底至少留 1 米，不然会吸泥沙，磨坏叶轮。</p>
+          <div class="warn"><b>先量再买　</b>井管内径拿不准就用皮尺量井口，或者把旧泵拿来对。买大了放不进去，运费和时间全白搭。</div>
+        </div>
+      </article>
+
+      <article class="q" id="q7">
+        <div class="kk">07 · 消防</div>
+        <h2>消防泵型号怎么读</h2>
+        <div class="prose">
+          <p>消防泵组型号是有固定读法的，比如 <span class="mono">XBD7.0/20G-L</span>：</p>
+          <div class="formula">
+            <b>XBD</b>　消防泵组<br>
+            <b>7.0</b>　额定压力 0.70 MPa（也就是 70 米扬程）<br>
+            <b>20</b>　额定流量 20 L/s（换算成 m³/h 要乘 3.6，即 72 m³/h）<br>
+            <b>G</b>　单级 · <b>GDL</b> 立式多级<br>
+            <b>L</b>　立式 · <b>W</b> 卧式
+          </div>
+          <div class="warn"><b>必须照图纸配　</b>消防系统属于强制性认证范围，流量和压力由消防设计图纸给定，不能凭经验换算或替代。把图纸上的 L/s 和 MPa 报给我们，直接对表。</div>
+        </div>
+      </article>
+
+      <article class="q" id="q8">
+        <div class="kk">08 · 型号</div>
+        <h2>型号后面的字母是什么意思</h2>
+        <div class="prose">
+          <p>上海人民的型号规则，认识几个常见字母就能看懂大半：</p>
+          <div class="tips">
+            <div class="tip"><b>D</b>单相 220V。WQD、QDX、QD 都是 220V 款，去掉 D 的同名型号就是 380V。</div>
+            <div class="tip"><b>A / B / C</b>离心泵里表示叶轮外径被切小的档位。带字母的流量扬程略低，但功率也低，工况卡在两档之间时更省电。</div>
+            <div class="tip"><b>G</b>带刀切割型（WQG、QGWQ）。<b>JY</b> 带搅拌。<b>S</b> 不锈钢或切割型（看系列）。<b>B</b> 全不锈钢款。</div>
+            <div class="tip"><b>/2 /3 /4</b>级数，也就是叶轮片数。级数越多扬程越高，流量不变。QD10-80/6 就是 6 级。</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="q" id="q9">
+        <div class="kk">09 · 故障</div>
+        <h2>水泵不上水，先查这几样</h2>
+        <div class="prose">
+          <p>按这个顺序查，八成问题在前四条：</p>
+          <div class="tips">
+            <div class="tip"><b>1 · 转向反了</b>三相泵最常见。任意调换两根火线，反转时出水量小、电流也小。</div>
+            <div class="tip"><b>2 · 没引水 / 漏气</b>自吸泵和离心泵必须先灌满水。进水管接头漏气、底阀不密封，泵就一直空转。</div>
+            <div class="tip"><b>3 · 吸程太高</b>泵离水面超过 5 米，理论上就吸不动了。把泵放低。</div>
+            <div class="tip"><b>4 · 堵了</b>进水口、叶轮、底阀滤网被杂物堵住。断电后清理。</div>
+            <div class="tip"><b>5 · 扬程不够</b>能出水但上不到高处，是选型时扬程算小了。</div>
+            <div class="tip"><b>6 · 电压不足 / 缺相</b>转速上不去，出水无力，电机还发烫。查电源和接线。</div>
+          </div>
+          <div class="warn"><b>安全第一　</b>任何检查之前先断电。潜水泵在水里时不要用手去摸，先确认电源已经断开。</div>
+        </div>
+      </article>
+
+      <article class="q" id="q10">
+        <div class="kk">10 · 观念</div>
+        <h2>泵是不是买大一点保险</h2>
+        <div class="prose">
+          <p>不是。<strong>大马拉小车，坏得更快也更费电。</strong></p>
+          <p>水泵在设计工况点附近效率最高。选得太大，实际运行时会偏离高效区，出现流量过大、电机过载、管路震动、汽蚀等问题，电费还天天多交。选得太小则压根不够用。</p>
+          <p>正确做法是<strong>按实际工况选，留 10%～20% 余量就够</strong>。我们水泵页的选型器就是按这个逻辑排的——先筛出「够用」的，再按富余量从小到大排，排在最前面的通常就是最合适的那台。</p>
+          <div class="tips">
+            <div class="tip"><b>试试看</b><a href="products/pumps.html" style="color:var(--blue-ink)">填流量和扬程 → 自动排型号 →</a></div>
+            <div class="tip"><b>拿不准</b>把用途直接说给我们听，比如「抽化粪池」「楼顶加压」「打 40 米深井」，我们帮你定。</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="t"><h3>还是拿不准？直接问</h3>
+      <p>说清楚三件事就够了：<b>抽什么、抽多少、送多高</b>。二十年经验，一个电话给你定下来。</p></div>
+    <div class="acts">
+      <a class="tel btn btn-p" href="tel:13690528818">13690528818</a>
+      <a class="btn btn-s" href="#" data-wechat>扫码加微信</a>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site.js"></script>
+<script>
+DF.init('选型知识');
+DF.foot();
+var links = [].slice.call(document.querySelectorAll('#toc a'));
+var arts = links.map(function (a) { return document.querySelector(a.getAttribute('href')) });
+var io = new IntersectionObserver(function (es) {
+  es.forEach(function (e) {
+    if (e.intersectionRatio > 0) {
+      var i = arts.indexOf(e.target);
+      links.forEach(function (a, j) { a.classList.toggle('on', j === i) });
+    }
+  });
+}, { rootMargin: '-80px 0px -70% 0px' });
+arts.forEach(function (a) { io.observe(a) });
+</script>
+</body>
+</html>

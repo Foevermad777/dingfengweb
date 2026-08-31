@@ -1,0 +1,848 @@
+[
+ {
+  "file": "assets/products/p06-0-179.png",
+  "spread": "p06",
+  "kind": "product",
+  "side": "L",
+  "w": 1050,
+  "h": 1501,
+  "bbox": [
+   0,
+   179,
+   198,
+   461
+  ],
+  "cutout": "assets/cutout/p06-0-179.png",
+  "cw": 769,
+  "ch": 1100,
+  "opaque": 0.88
+ },
+ {
+  "file": "assets/products/p08-224-409.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 608,
+  "h": 1501,
+  "bbox": [
+   224,
+   409,
+   354,
+   732
+  ],
+  "cutout": "assets/cutout/p08-224-409.png",
+  "cw": 446,
+  "ch": 1100,
+  "opaque": 0.637
+ },
+ {
+  "file": "assets/products/p08-65-438.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 659,
+  "h": 1501,
+  "bbox": [
+   65,
+   438,
+   194,
+   732
+  ],
+  "cutout": "assets/cutout/p08-65-438.png",
+  "cw": 483,
+  "ch": 1100,
+  "opaque": 0.747
+ },
+ {
+  "file": "assets/products/p08-385-401.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 542,
+  "h": 1501,
+  "bbox": [
+   385,
+   401,
+   504,
+   732
+  ],
+  "cutout": "assets/cutout/p08-385-401.png",
+  "cw": 397,
+  "ch": 1100,
+  "opaque": 0.726
+ },
+ {
+  "file": "assets/products/p09-199-403.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 666,
+  "h": 1501,
+  "bbox": [
+   199,
+   403,
+   354,
+   753
+  ],
+  "cutout": "assets/cutout/p09-199-403.png",
+  "cw": 466,
+  "ch": 1100,
+  "opaque": 0.576
+ },
+ {
+  "file": "assets/products/p09-368-416.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 647,
+  "h": 1501,
+  "bbox": [
+   368,
+   416,
+   513,
+   753
+  ],
+  "cutout": "assets/cutout/p09-368-416.png",
+  "cw": 474,
+  "ch": 1100,
+  "opaque": 0.605
+ },
+ {
+  "file": "assets/products/p09-53-468.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 691,
+  "h": 1501,
+  "bbox": [
+   53,
+   468,
+   184,
+   753
+  ],
+  "cutout": "assets/cutout/p09-53-468.png",
+  "cw": 506,
+  "ch": 1100,
+  "opaque": 0.611
+ },
+ {
+  "file": "assets/products/p12-681-401.png",
+  "spread": "p12",
+  "kind": "product",
+  "side": "R",
+  "w": 685,
+  "h": 1501,
+  "bbox": [
+   681,
+   401,
+   831,
+   729
+  ],
+  "cutout": "assets/cutout/p12-681-401.png",
+  "cw": 501,
+  "ch": 1100,
+  "opaque": 0.549
+ },
+ {
+  "file": "assets/products/p12-856-401.png",
+  "spread": "p12",
+  "kind": "product",
+  "side": "R",
+  "w": 748,
+  "h": 1501,
+  "bbox": [
+   856,
+   401,
+   1020,
+   729
+  ],
+  "cutout": "assets/cutout/p12-856-401.png",
+  "cw": 548,
+  "ch": 1100,
+  "opaque": 0.579
+ },
+ {
+  "file": "assets/products/p13-1027-166.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 565,
+  "h": 1268,
+  "bbox": [
+   1027,
+   166,
+   1121,
+   377
+  ],
+  "cutout": "assets/cutout/p13-1027-166.png",
+  "cw": 488,
+  "ch": 1100,
+  "opaque": 0.589
+ },
+ {
+  "file": "assets/products/p13-816-202.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 477,
+  "h": 1047,
+  "bbox": [
+   816,
+   202,
+   896,
+   377
+  ],
+  "cutout": "assets/cutout/p13-816-202.png",
+  "cw": 406,
+  "ch": 1027,
+  "opaque": 0.725
+ },
+ {
+  "file": "assets/products/p13-915-188.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 495,
+  "h": 1139,
+  "bbox": [
+   915,
+   188,
+   997,
+   378
+  ],
+  "cutout": "assets/cutout/p13-915-188.png",
+  "cw": 436,
+  "ch": 1100,
+  "opaque": 0.709
+ },
+ {
+  "file": "assets/products/p14-254-523.png",
+  "spread": "p14",
+  "kind": "product",
+  "side": "L",
+  "w": 815,
+  "h": 1210,
+  "bbox": [
+   254,
+   523,
+   390,
+   725
+  ],
+  "cutout": "assets/cutout/p14-254-523.png",
+  "cw": 741,
+  "ch": 1100,
+  "opaque": 0.642
+ },
+ {
+  "file": "assets/products/p14-405-508.png",
+  "spread": "p14",
+  "kind": "product",
+  "side": "L",
+  "w": 876,
+  "h": 1300,
+  "bbox": [
+   405,
+   508,
+   551,
+   725
+  ],
+  "cutout": "assets/cutout/p14-405-508.png",
+  "cw": 741,
+  "ch": 1100,
+  "opaque": 0.634
+ },
+ {
+  "file": "assets/products/p20-85-488.png",
+  "spread": "p20",
+  "kind": "product",
+  "side": "L",
+  "w": 1038,
+  "h": 1501,
+  "bbox": [
+   85,
+   488,
+   265,
+   750
+  ],
+  "cutout": "assets/cutout/p20-85-488.png",
+  "cw": 692,
+  "ch": 1100,
+  "opaque": 0.618
+ },
+ {
+  "file": "assets/products/p20-301-472.png",
+  "spread": "p20",
+  "kind": "product",
+  "side": "L",
+  "w": 663,
+  "h": 1501,
+  "bbox": [
+   301,
+   472,
+   424,
+   750
+  ],
+  "cutout": "assets/cutout/p20-301-472.png",
+  "cw": 486,
+  "ch": 1100,
+  "opaque": 0.65
+ },
+ {
+  "file": "assets/products/p21-964-382.png",
+  "spread": "p21",
+  "kind": "product",
+  "side": "R",
+  "w": 832,
+  "h": 1501,
+  "bbox": [
+   964,
+   382,
+   1155,
+   726
+  ],
+  "cutout": "assets/cutout/p21-964-382.png",
+  "cw": 610,
+  "ch": 1100,
+  "opaque": 0.638
+ },
+ {
+  "file": "assets/products/p23-361-344.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 489,
+  "h": 1443,
+  "bbox": [
+   361,
+   344,
+   443,
+   585
+  ],
+  "cutout": "assets/cutout/p23-361-344.png",
+  "cw": 373,
+  "ch": 1100,
+  "opaque": 0.672
+ },
+ {
+  "file": "assets/products/p23-462-282.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 296,
+  "h": 1501,
+  "bbox": [
+   462,
+   282,
+   522,
+   585
+  ],
+  "cutout": "assets/cutout/p23-462-282.png",
+  "cw": 217,
+  "ch": 1100,
+  "opaque": 0.709
+ },
+ {
+  "file": "assets/products/p23-279-360.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 382,
+  "h": 1351,
+  "bbox": [
+   279,
+   360,
+   342,
+   585
+  ],
+  "cutout": "assets/cutout/p23-279-360.png",
+  "cw": 311,
+  "ch": 1100,
+  "opaque": 0.791
+ },
+ {
+  "file": "assets/products/p23-161-381.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 655,
+  "h": 1225,
+  "bbox": [
+   161,
+   381,
+   270,
+   585
+  ],
+  "cutout": "assets/cutout/p23-161-381.png",
+  "cw": 587,
+  "ch": 1100,
+  "opaque": 0.506
+ },
+ {
+  "file": "assets/products/p23-53-382.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 625,
+  "h": 1214,
+  "bbox": [
+   53,
+   382,
+   157,
+   585
+  ],
+  "cutout": "assets/cutout/p23-53-382.png",
+  "cw": 566,
+  "ch": 1100,
+  "opaque": 0.483
+ },
+ {
+  "file": "assets/products/p24-915-367.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 810,
+  "h": 1380,
+  "bbox": [
+   915,
+   367,
+   1050,
+   597
+  ],
+  "cutout": "assets/cutout/p24-915-367.png",
+  "cw": 646,
+  "ch": 1100,
+  "opaque": 0.564
+ },
+ {
+  "file": "assets/products/p24-1068-289.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 309,
+  "h": 1501,
+  "bbox": [
+   1068,
+   289,
+   1131,
+   597
+  ],
+  "cutout": "assets/cutout/p24-1068-289.png",
+  "cw": 226,
+  "ch": 1100,
+  "opaque": 0.889
+ },
+ {
+  "file": "assets/products/p24-674-372.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 594,
+  "h": 1349,
+  "bbox": [
+   674,
+   372,
+   772,
+   597
+  ],
+  "cutout": "assets/cutout/p24-674-372.png",
+  "cw": 485,
+  "ch": 1100,
+  "opaque": 0.629
+ },
+ {
+  "file": "assets/products/p24-786-380.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 667,
+  "h": 1304,
+  "bbox": [
+   786,
+   380,
+   897,
+   597
+  ],
+  "cutout": "assets/cutout/p24-786-380.png",
+  "cw": 563,
+  "ch": 1100,
+  "opaque": 0.607
+ },
+ {
+  "file": "assets/products/p26-362-476.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 378,
+  "h": 1501,
+  "bbox": [
+   362,
+   476,
+   432,
+   751
+  ],
+  "cutout": "assets/cutout/p26-362-476.png",
+  "cw": 277,
+  "ch": 1100,
+  "opaque": 0.714
+ },
+ {
+  "file": "assets/products/p26-126-551.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 515,
+  "h": 1210,
+  "bbox": [
+   126,
+   551,
+   212,
+   753
+  ],
+  "cutout": "assets/cutout/p26-126-551.png",
+  "cw": 468,
+  "ch": 1100,
+  "opaque": 0.623
+ },
+ {
+  "file": "assets/products/p26-241-523.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 528,
+  "h": 1372,
+  "bbox": [
+   241,
+   523,
+   329,
+   752
+  ],
+  "cutout": "assets/cutout/p26-241-523.png",
+  "cw": 423,
+  "ch": 1100,
+  "opaque": 0.652
+ },
+ {
+  "file": "assets/products/p31-732-432.png",
+  "spread": "p31",
+  "kind": "product",
+  "side": "R",
+  "w": 647,
+  "h": 1501,
+  "bbox": [
+   732,
+   432,
+   870,
+   753
+  ],
+  "cutout": "assets/cutout/p31-732-432.png",
+  "cw": 473,
+  "ch": 1100,
+  "opaque": 0.444
+ },
+ {
+  "file": "assets/products/p31-933-410.png",
+  "spread": "p31",
+  "kind": "product",
+  "side": "R",
+  "w": 783,
+  "h": 1501,
+  "bbox": [
+   933,
+   410,
+   1100,
+   731
+  ],
+  "cutout": "assets/cutout/p31-933-410.png",
+  "cw": 572,
+  "ch": 1100,
+  "opaque": 0.463
+ },
+ {
+  "file": "assets/products/p32-974-216.png",
+  "spread": "p32",
+  "kind": "product",
+  "side": "R",
+  "w": 667,
+  "h": 1501,
+  "bbox": [
+   974,
+   216,
+   1151,
+   616
+  ],
+  "cutout": "assets/cutout/p32-974-216.png",
+  "cw": 487,
+  "ch": 1100,
+  "opaque": 0.347
+ },
+ {
+  "file": "assets/products/p35-926-338.png",
+  "spread": "p35",
+  "kind": "product",
+  "side": "R",
+  "w": 618,
+  "h": 1501,
+  "bbox": [
+   926,
+   338,
+   1086,
+   726
+  ],
+  "cutout": "assets/cutout/p35-926-338.png",
+  "cw": 453,
+  "ch": 1100,
+  "opaque": 0.356
+ },
+ {
+  "file": "assets/products/p38-399-389.png",
+  "spread": "p38",
+  "kind": "product",
+  "side": "L",
+  "w": 517,
+  "h": 1501,
+  "bbox": [
+   399,
+   389,
+   515,
+   726
+  ],
+  "cutout": "assets/cutout/p38-399-389.png",
+  "cw": 379,
+  "ch": 1100,
+  "opaque": 0.591
+ },
+ {
+  "file": "assets/products/p38-249-358.png",
+  "spread": "p38",
+  "kind": "product",
+  "side": "L",
+  "w": 476,
+  "h": 1501,
+  "bbox": [
+   249,
+   358,
+   366,
+   726
+  ],
+  "cutout": "assets/cutout/p38-249-358.png",
+  "cw": 349,
+  "ch": 1100,
+  "opaque": 0.806
+ },
+ {
+  "file": "assets/products/p40-69-495.png",
+  "spread": "p40",
+  "kind": "product",
+  "side": "L",
+  "w": 1195,
+  "h": 1439,
+  "bbox": [
+   69,
+   495,
+   268,
+   735
+  ],
+  "cutout": "assets/cutout/p40-69-495.png",
+  "cw": 895,
+  "ch": 1100,
+  "opaque": 0.702
+ },
+ {
+  "file": "assets/products/p41-65-551.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 747,
+  "h": 1210,
+  "bbox": [
+   65,
+   551,
+   189,
+   753
+  ],
+  "cutout": "assets/cutout/p41-65-551.png",
+  "cw": 679,
+  "ch": 1100,
+  "opaque": 0.545
+ },
+ {
+  "file": "assets/products/p41-360-462.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 307,
+  "h": 1501,
+  "bbox": [
+   360,
+   462,
+   420,
+   753
+  ],
+  "cutout": "assets/cutout/p41-360-462.png",
+  "cw": 225,
+  "ch": 1100,
+  "opaque": 0.763
+ },
+ {
+  "file": "assets/products/p41-461-426.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 222,
+  "h": 1501,
+  "bbox": [
+   461,
+   426,
+   510,
+   753
+  ],
+  "cutout": "assets/cutout/p41-461-426.png",
+  "cw": 160,
+  "ch": 1100,
+  "opaque": 0.71
+ },
+ {
+  "file": "assets/products/p41-213-501.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 715,
+  "h": 1501,
+  "bbox": [
+   213,
+   501,
+   333,
+   753
+  ],
+  "cutout": "assets/cutout/p41-213-501.png",
+  "cw": 525,
+  "ch": 1100,
+  "opaque": 0.66
+ },
+ {
+  "file": "assets/products/p43-225-591.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 524,
+  "h": 913,
+  "bbox": [
+   225,
+   591,
+   312,
+   743
+  ],
+  "cutout": "assets/cutout/p43-225-591.png",
+  "cw": 449,
+  "ch": 774,
+  "opaque": 0.778
+ },
+ {
+  "file": "assets/products/p43-258-364.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 574,
+  "h": 1247,
+  "bbox": [
+   258,
+   364,
+   353,
+   572
+  ],
+  "cutout": "assets/cutout/p43-258-364.png",
+  "cw": 506,
+  "ch": 1100,
+  "opaque": 0.935
+ },
+ {
+  "file": "assets/products/p43-393-389.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 608,
+  "h": 1131,
+  "bbox": [
+   393,
+   389,
+   494,
+   577
+  ],
+  "cutout": "assets/cutout/p43-393-389.png",
+  "cw": 591,
+  "ch": 1100,
+  "opaque": 0.93
+ },
+ {
+  "file": "assets/products/p43-98-402.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 781,
+  "h": 928,
+  "bbox": [
+   98,
+   402,
+   228,
+   557
+  ],
+  "cutout": "assets/cutout/p43-98-402.png",
+  "cw": 781,
+  "ch": 928,
+  "opaque": 0.965
+ },
+ {
+  "file": "assets/products/p48-1043-178.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 273,
+  "h": 1501,
+  "bbox": [
+   1043,
+   178,
+   1111,
+   548
+  ],
+  "cutout": "assets/cutout/p48-1043-178.png",
+  "cw": 200,
+  "ch": 1100,
+  "opaque": 0.415
+ },
+ {
+  "file": "assets/products/p48-874-238.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 478,
+  "h": 1501,
+  "bbox": [
+   874,
+   238,
+   972,
+   548
+  ],
+  "cutout": "assets/cutout/p48-874-238.png",
+  "cw": 350,
+  "ch": 1100,
+  "opaque": 0.577
+ },
+ {
+  "file": "assets/products/p48-867-587.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 735,
+  "h": 909,
+  "bbox": [
+   867,
+   587,
+   990,
+   738
+  ],
+  "cutout": "assets/cutout/p48-867-587.png",
+  "cw": 735,
+  "ch": 909,
+  "opaque": 0.548
+ }
+]

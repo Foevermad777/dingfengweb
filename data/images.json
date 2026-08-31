@@ -1,0 +1,1206 @@
+[
+ {
+  "file": "assets/products/p01-603-0.png",
+  "spread": "p01",
+  "kind": "product",
+  "side": "R",
+  "w": 1100,
+  "h": 1500,
+  "bbox": [
+   603,
+   0,
+   1208,
+   825
+  ]
+ },
+ {
+  "file": "assets/products/p01-604-34.png",
+  "spread": "p01",
+  "kind": "product",
+  "side": "R",
+  "w": 862,
+  "h": 1501,
+  "bbox": [
+   604,
+   34,
+   1058,
+   825
+  ]
+ },
+ {
+  "file": "assets/scenes/p03--18--38.png",
+  "spread": "p03",
+  "kind": "scene",
+  "side": "L",
+  "w": 1455,
+  "h": 799,
+  "bbox": [
+   -18,
+   -38,
+   1227,
+   663
+  ]
+ },
+ {
+  "file": "assets/scenes/p04-0-0.png",
+  "spread": "p04",
+  "kind": "scene",
+  "side": "L",
+  "w": 1500,
+  "h": 1025,
+  "bbox": [
+   0,
+   0,
+   1208,
+   825
+  ]
+ },
+ {
+  "file": "assets/scenes/p05-449-466.png",
+  "spread": "p05",
+  "kind": "scene",
+  "side": "L",
+  "w": 1501,
+  "h": 1129,
+  "bbox": [
+   449,
+   466,
+   851,
+   769
+  ]
+ },
+ {
+  "file": "assets/scenes/p05-311-117.png",
+  "spread": "p05",
+  "kind": "scene",
+  "side": "L",
+  "w": 1154,
+  "h": 788,
+  "bbox": [
+   311,
+   117,
+   503,
+   248
+  ]
+ },
+ {
+  "file": "assets/products/p06-406-251.png",
+  "spread": "p06",
+  "kind": "product",
+  "side": "L",
+  "w": 1051,
+  "h": 1501,
+  "bbox": [
+   406,
+   251,
+   604,
+   534
+  ]
+ },
+ {
+  "file": "assets/products/p06-203-215.png",
+  "spread": "p06",
+  "kind": "product",
+  "side": "L",
+  "w": 1091,
+  "h": 1501,
+  "bbox": [
+   203,
+   215,
+   401,
+   488
+  ]
+ },
+ {
+  "file": "assets/products/p06-0-179.png",
+  "spread": "p06",
+  "kind": "product",
+  "side": "L",
+  "w": 1050,
+  "h": 1501,
+  "bbox": [
+   0,
+   179,
+   198,
+   461
+  ]
+ },
+ {
+  "file": "assets/scenes/p06-91-388.png",
+  "spread": "p06",
+  "kind": "scene",
+  "side": "L",
+  "w": 1501,
+  "h": 1127,
+  "bbox": [
+   91,
+   388,
+   473,
+   675
+  ]
+ },
+ {
+  "file": "assets/scenes/p07-0-0.png",
+  "spread": "p07",
+  "kind": "scene",
+  "side": "L",
+  "w": 1500,
+  "h": 1025,
+  "bbox": [
+   0,
+   0,
+   1208,
+   825
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-657-232.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 613,
+  "bbox": [
+   657,
+   232,
+   818,
+   334
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-825-232.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 615,
+  "bbox": [
+   825,
+   232,
+   986,
+   334
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-993-232.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 970,
+  "h": 614,
+  "bbox": [
+   993,
+   232,
+   1155,
+   334
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-657-358.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 967,
+  "h": 613,
+  "bbox": [
+   657,
+   358,
+   818,
+   460
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-825-358.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 614,
+  "bbox": [
+   825,
+   358,
+   986,
+   460
+  ]
+ },
+ {
+  "file": "assets/scenes/p08-994-358.png",
+  "spread": "p08",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 613,
+  "bbox": [
+   994,
+   358,
+   1155,
+   460
+  ]
+ },
+ {
+  "file": "assets/products/p08-224-409.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 608,
+  "h": 1501,
+  "bbox": [
+   224,
+   409,
+   354,
+   732
+  ]
+ },
+ {
+  "file": "assets/products/p08-65-438.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 659,
+  "h": 1501,
+  "bbox": [
+   65,
+   438,
+   194,
+   732
+  ]
+ },
+ {
+  "file": "assets/products/p08-385-401.png",
+  "spread": "p08",
+  "kind": "product",
+  "side": "L",
+  "w": 542,
+  "h": 1501,
+  "bbox": [
+   385,
+   401,
+   504,
+   732
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-657-188.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 609,
+  "bbox": [
+   657,
+   188,
+   818,
+   289
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-825-187.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 970,
+  "h": 615,
+  "bbox": [
+   825,
+   187,
+   986,
+   289
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-994-187.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 614,
+  "bbox": [
+   994,
+   187,
+   1155,
+   289
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-656-313.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 970,
+  "h": 613,
+  "bbox": [
+   656,
+   313,
+   818,
+   415
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-825-313.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 968,
+  "h": 613,
+  "bbox": [
+   825,
+   313,
+   986,
+   415
+  ]
+ },
+ {
+  "file": "assets/scenes/p09-994-313.png",
+  "spread": "p09",
+  "kind": "scene",
+  "side": "R",
+  "w": 967,
+  "h": 613,
+  "bbox": [
+   994,
+   313,
+   1155,
+   415
+  ]
+ },
+ {
+  "file": "assets/products/p09-199-403.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 666,
+  "h": 1501,
+  "bbox": [
+   199,
+   403,
+   354,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p09-368-416.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 647,
+  "h": 1501,
+  "bbox": [
+   368,
+   416,
+   513,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p09-53-468.png",
+  "spread": "p09",
+  "kind": "product",
+  "side": "L",
+  "w": 691,
+  "h": 1501,
+  "bbox": [
+   53,
+   468,
+   184,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p12-681-401.png",
+  "spread": "p12",
+  "kind": "product",
+  "side": "R",
+  "w": 685,
+  "h": 1501,
+  "bbox": [
+   681,
+   401,
+   831,
+   729
+  ]
+ },
+ {
+  "file": "assets/products/p12-856-401.png",
+  "spread": "p12",
+  "kind": "product",
+  "side": "R",
+  "w": 748,
+  "h": 1501,
+  "bbox": [
+   856,
+   401,
+   1020,
+   729
+  ]
+ },
+ {
+  "file": "assets/products/p13-1027-166.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 565,
+  "h": 1268,
+  "bbox": [
+   1027,
+   166,
+   1121,
+   377
+  ]
+ },
+ {
+  "file": "assets/products/p13-816-202.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 477,
+  "h": 1047,
+  "bbox": [
+   816,
+   202,
+   896,
+   377
+  ]
+ },
+ {
+  "file": "assets/products/p13-915-188.png",
+  "spread": "p13",
+  "kind": "product",
+  "side": "R",
+  "w": 495,
+  "h": 1139,
+  "bbox": [
+   915,
+   188,
+   997,
+   378
+  ]
+ },
+ {
+  "file": "assets/products/p14-254-523.png",
+  "spread": "p14",
+  "kind": "product",
+  "side": "L",
+  "w": 815,
+  "h": 1210,
+  "bbox": [
+   254,
+   523,
+   390,
+   725
+  ]
+ },
+ {
+  "file": "assets/products/p14-405-508.png",
+  "spread": "p14",
+  "kind": "product",
+  "side": "L",
+  "w": 876,
+  "h": 1300,
+  "bbox": [
+   405,
+   508,
+   551,
+   725
+  ]
+ },
+ {
+  "file": "assets/products/p20-85-488.png",
+  "spread": "p20",
+  "kind": "product",
+  "side": "L",
+  "w": 1038,
+  "h": 1501,
+  "bbox": [
+   85,
+   488,
+   265,
+   750
+  ]
+ },
+ {
+  "file": "assets/products/p20-301-472.png",
+  "spread": "p20",
+  "kind": "product",
+  "side": "L",
+  "w": 663,
+  "h": 1501,
+  "bbox": [
+   301,
+   472,
+   424,
+   750
+  ]
+ },
+ {
+  "file": "assets/products/p21-964-382.png",
+  "spread": "p21",
+  "kind": "product",
+  "side": "R",
+  "w": 832,
+  "h": 1501,
+  "bbox": [
+   964,
+   382,
+   1155,
+   726
+  ]
+ },
+ {
+  "file": "assets/products/p23-361-344.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 489,
+  "h": 1443,
+  "bbox": [
+   361,
+   344,
+   443,
+   585
+  ]
+ },
+ {
+  "file": "assets/products/p23-462-282.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 296,
+  "h": 1501,
+  "bbox": [
+   462,
+   282,
+   522,
+   585
+  ]
+ },
+ {
+  "file": "assets/products/p23-279-360.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 382,
+  "h": 1351,
+  "bbox": [
+   279,
+   360,
+   342,
+   585
+  ]
+ },
+ {
+  "file": "assets/products/p23-161-381.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 655,
+  "h": 1225,
+  "bbox": [
+   161,
+   381,
+   270,
+   585
+  ]
+ },
+ {
+  "file": "assets/products/p23-53-382.png",
+  "spread": "p23",
+  "kind": "product",
+  "side": "L",
+  "w": 625,
+  "h": 1214,
+  "bbox": [
+   53,
+   382,
+   157,
+   585
+  ]
+ },
+ {
+  "file": "assets/products/p24-915-367.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 810,
+  "h": 1380,
+  "bbox": [
+   915,
+   367,
+   1050,
+   597
+  ]
+ },
+ {
+  "file": "assets/products/p24-1068-289.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 309,
+  "h": 1501,
+  "bbox": [
+   1068,
+   289,
+   1131,
+   597
+  ]
+ },
+ {
+  "file": "assets/products/p24-674-372.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 594,
+  "h": 1349,
+  "bbox": [
+   674,
+   372,
+   772,
+   597
+  ]
+ },
+ {
+  "file": "assets/products/p24-786-380.png",
+  "spread": "p24",
+  "kind": "product",
+  "side": "R",
+  "w": 667,
+  "h": 1304,
+  "bbox": [
+   786,
+   380,
+   897,
+   597
+  ]
+ },
+ {
+  "file": "assets/products/p26-362-476.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 378,
+  "h": 1501,
+  "bbox": [
+   362,
+   476,
+   432,
+   751
+  ]
+ },
+ {
+  "file": "assets/products/p26-126-551.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 515,
+  "h": 1210,
+  "bbox": [
+   126,
+   551,
+   212,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p26-241-523.png",
+  "spread": "p26",
+  "kind": "product",
+  "side": "L",
+  "w": 528,
+  "h": 1372,
+  "bbox": [
+   241,
+   523,
+   329,
+   752
+  ]
+ },
+ {
+  "file": "assets/scenes/p27-716-311.png",
+  "spread": "p27",
+  "kind": "scene",
+  "side": "R",
+  "w": 1029,
+  "h": 795,
+  "bbox": [
+   716,
+   311,
+   887,
+   444
+  ]
+ },
+ {
+  "file": "assets/products/p31-732-432.png",
+  "spread": "p31",
+  "kind": "product",
+  "side": "R",
+  "w": 647,
+  "h": 1501,
+  "bbox": [
+   732,
+   432,
+   870,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p31-933-410.png",
+  "spread": "p31",
+  "kind": "product",
+  "side": "R",
+  "w": 783,
+  "h": 1501,
+  "bbox": [
+   933,
+   410,
+   1100,
+   731
+  ]
+ },
+ {
+  "file": "assets/products/p32-974-216.png",
+  "spread": "p32",
+  "kind": "product",
+  "side": "R",
+  "w": 667,
+  "h": 1501,
+  "bbox": [
+   974,
+   216,
+   1151,
+   616
+  ]
+ },
+ {
+  "file": "assets/products/p35-926-338.png",
+  "spread": "p35",
+  "kind": "product",
+  "side": "R",
+  "w": 618,
+  "h": 1501,
+  "bbox": [
+   926,
+   338,
+   1086,
+   726
+  ]
+ },
+ {
+  "file": "assets/scenes/p35-657-331.png",
+  "spread": "p35",
+  "kind": "scene",
+  "side": "R",
+  "w": 949,
+  "h": 641,
+  "bbox": [
+   657,
+   331,
+   815,
+   438
+  ]
+ },
+ {
+  "file": "assets/scenes/p35-657-476.png",
+  "spread": "p35",
+  "kind": "scene",
+  "side": "R",
+  "w": 949,
+  "h": 642,
+  "bbox": [
+   657,
+   476,
+   815,
+   583
+  ]
+ },
+ {
+  "file": "assets/scenes/p35-657-619.png",
+  "spread": "p35",
+  "kind": "scene",
+  "side": "R",
+  "w": 948,
+  "h": 642,
+  "bbox": [
+   657,
+   619,
+   815,
+   726
+  ]
+ },
+ {
+  "file": "assets/scenes/p36-962-120.png",
+  "spread": "p36",
+  "kind": "scene",
+  "side": "R",
+  "w": 941,
+  "h": 734,
+  "bbox": [
+   962,
+   120,
+   1118,
+   242
+  ]
+ },
+ {
+  "file": "assets/scenes/p37-356-120.png",
+  "spread": "p37",
+  "kind": "scene",
+  "side": "L",
+  "w": 958,
+  "h": 631,
+  "bbox": [
+   356,
+   120,
+   516,
+   225
+  ]
+ },
+ {
+  "file": "assets/scenes/p38-52-355.png",
+  "spread": "p38",
+  "kind": "scene",
+  "side": "L",
+  "w": 912,
+  "h": 614,
+  "bbox": [
+   52,
+   355,
+   204,
+   457
+  ]
+ },
+ {
+  "file": "assets/scenes/p38-52-483.png",
+  "spread": "p38",
+  "kind": "scene",
+  "side": "L",
+  "w": 911,
+  "h": 613,
+  "bbox": [
+   52,
+   483,
+   204,
+   585
+  ]
+ },
+ {
+  "file": "assets/scenes/p38-52-610.png",
+  "spread": "p38",
+  "kind": "scene",
+  "side": "L",
+  "w": 914,
+  "h": 615,
+  "bbox": [
+   52,
+   610,
+   204,
+   712
+  ]
+ },
+ {
+  "file": "assets/products/p38-399-389.png",
+  "spread": "p38",
+  "kind": "product",
+  "side": "L",
+  "w": 517,
+  "h": 1501,
+  "bbox": [
+   399,
+   389,
+   515,
+   726
+  ]
+ },
+ {
+  "file": "assets/products/p38-249-358.png",
+  "spread": "p38",
+  "kind": "product",
+  "side": "L",
+  "w": 476,
+  "h": 1501,
+  "bbox": [
+   249,
+   358,
+   366,
+   726
+  ]
+ },
+ {
+  "file": "assets/products/p40-69-495.png",
+  "spread": "p40",
+  "kind": "product",
+  "side": "L",
+  "w": 1195,
+  "h": 1439,
+  "bbox": [
+   69,
+   495,
+   268,
+   735
+  ]
+ },
+ {
+  "file": "assets/scenes/p41-53-313.png",
+  "spread": "p41",
+  "kind": "scene",
+  "side": "L",
+  "w": 991,
+  "h": 558,
+  "bbox": [
+   53,
+   313,
+   218,
+   406
+  ]
+ },
+ {
+  "file": "assets/scenes/p41-223-313.png",
+  "spread": "p41",
+  "kind": "scene",
+  "side": "L",
+  "w": 993,
+  "h": 558,
+  "bbox": [
+   223,
+   313,
+   389,
+   406
+  ]
+ },
+ {
+  "file": "assets/products/p41-65-551.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 747,
+  "h": 1210,
+  "bbox": [
+   65,
+   551,
+   189,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p41-360-462.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 307,
+  "h": 1501,
+  "bbox": [
+   360,
+   462,
+   420,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p41-461-426.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 222,
+  "h": 1501,
+  "bbox": [
+   461,
+   426,
+   510,
+   753
+  ]
+ },
+ {
+  "file": "assets/products/p41-213-501.png",
+  "spread": "p41",
+  "kind": "product",
+  "side": "L",
+  "w": 715,
+  "h": 1501,
+  "bbox": [
+   213,
+   501,
+   333,
+   753
+  ]
+ },
+ {
+  "file": "assets/scenes/p42-85-213.png",
+  "spread": "p42",
+  "kind": "scene",
+  "side": "L",
+  "w": 1501,
+  "h": 1201,
+  "bbox": [
+   85,
+   213,
+   469,
+   520
+  ]
+ },
+ {
+  "file": "assets/scenes/p42-53-573.png",
+  "spread": "p42",
+  "kind": "scene",
+  "side": "L",
+  "w": 1328,
+  "h": 943,
+  "bbox": [
+   53,
+   573,
+   274,
+   730
+  ]
+ },
+ {
+  "file": "assets/products/p43-225-591.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 524,
+  "h": 913,
+  "bbox": [
+   225,
+   591,
+   312,
+   743
+  ]
+ },
+ {
+  "file": "assets/products/p43-258-364.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 574,
+  "h": 1247,
+  "bbox": [
+   258,
+   364,
+   353,
+   572
+  ]
+ },
+ {
+  "file": "assets/products/p43-393-389.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 608,
+  "h": 1131,
+  "bbox": [
+   393,
+   389,
+   494,
+   577
+  ]
+ },
+ {
+  "file": "assets/products/p43-98-402.png",
+  "spread": "p43",
+  "kind": "product",
+  "side": "L",
+  "w": 781,
+  "h": 928,
+  "bbox": [
+   98,
+   402,
+   228,
+   557
+  ]
+ },
+ {
+  "file": "assets/scenes/p43-656-135.png",
+  "spread": "p43",
+  "kind": "scene",
+  "side": "R",
+  "w": 964,
+  "h": 647,
+  "bbox": [
+   656,
+   135,
+   817,
+   243
+  ]
+ },
+ {
+  "file": "assets/scenes/p43-826-135.png",
+  "spread": "p43",
+  "kind": "scene",
+  "side": "R",
+  "w": 962,
+  "h": 649,
+  "bbox": [
+   826,
+   135,
+   986,
+   243
+  ]
+ },
+ {
+  "file": "assets/scenes/p43-995-135.png",
+  "spread": "p43",
+  "kind": "scene",
+  "side": "R",
+  "w": 962,
+  "h": 647,
+  "bbox": [
+   995,
+   135,
+   1155,
+   243
+  ]
+ },
+ {
+  "file": "assets/products/p48-1043-178.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 273,
+  "h": 1501,
+  "bbox": [
+   1043,
+   178,
+   1111,
+   548
+  ]
+ },
+ {
+  "file": "assets/products/p48-874-238.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 478,
+  "h": 1501,
+  "bbox": [
+   874,
+   238,
+   972,
+   548
+  ]
+ },
+ {
+  "file": "assets/scenes/p48-666-643.png",
+  "spread": "p48",
+  "kind": "scene",
+  "side": "R",
+  "w": 1058,
+  "h": 569,
+  "bbox": [
+   666,
+   643,
+   842,
+   738
+  ]
+ },
+ {
+  "file": "assets/products/p48-867-587.png",
+  "spread": "p48",
+  "kind": "product",
+  "side": "R",
+  "w": 735,
+  "h": 909,
+  "bbox": [
+   867,
+   587,
+   990,
+   738
+  ]
+ }
+]

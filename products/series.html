@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>系列详情 | 鼎烽机电商行</title>
+<meta name="description" content="上海人民 SRM 水泵系列详情：适用场景、选型要点、子系列与完整参数表。佛山南海鼎烽机电商行·广佛总代理 13690528818。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/product.css">
+<style>
+.hero2{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}
+.gal{display:grid;gap:10px}
+.gal .big{background:linear-gradient(160deg,#EEF3F7,#DAE4EC);border-radius:14px;height:300px;
+  position:relative;overflow:hidden;display:grid;place-items:center}
+.gal .big img{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);
+  object-fit:contain;filter:drop-shadow(0 14px 26px rgba(20,45,70,.25))}
+.gal .big .none{color:var(--ink-3);font-size:13px;font-family:var(--mono);text-align:center;
+  line-height:1.9;padding:0 28px}
+.gal .thumbs{display:flex;gap:8px;flex-wrap:wrap}
+.gal .thumbs button{width:62px;height:62px;border-radius:9px;border:1px solid var(--line);
+  background:var(--card);padding:5px;cursor:pointer;position:relative;overflow:hidden}
+.gal .thumbs button[aria-current="true"]{border-color:var(--blue-ink);box-shadow:0 0 0 2px var(--blue-wash)}
+.gal .thumbs img{width:100%;height:100%;object-fit:contain}
+.uses{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:9px;margin-top:6px}
+.use{display:flex;gap:9px;align-items:flex-start;font-size:14.5px;color:var(--ink-2);
+  background:var(--card);border:1px solid var(--line);border-radius:9px;padding:11px 13px}
+.use b{color:var(--blue-ink);font-family:var(--mono);font-size:11px;line-height:1.9;flex-shrink:0}
+.pickbox{background:var(--blue-wash);border:1px solid #C4D8EC;border-left:3px solid var(--blue-ink);
+  border-radius:10px;padding:15px 18px;margin-top:18px;font-size:14.5px;color:var(--ink)}
+.pickbox b{color:var(--blue-ink)}
+@media (max-width:900px){.hero2{grid-template-columns:1fr;gap:22px}.gal .big{height:230px}}
+</style>
+</head>
+<body class="page">
+
+<header class="phead">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">首页</a><i>/</i><a href="pumps.html">水泵</a><i>/</i><span id="cbName">系列</span></div>
+    <h1 id="hName">—</h1>
+    <div class="ptag" id="hTags"></div>
+    <div class="pstats" id="hStats"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="sect">
+    <div class="hero2">
+      <div>
+        <div class="rule"></div>
+        <h2 style="font-size:22px;font-weight:600;margin-bottom:10px">这一类泵用在哪</h2>
+        <p class="prose" id="lead" style="margin:0 0 16px"></p>
+        <div class="uses" id="uses"></div>
+        <div class="pickbox" id="pick"></div>
+      </div>
+      <div class="gal">
+        <div class="big" id="galBig"></div>
+        <div class="thumbs" id="galThumbs"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect" style="padding-top:0">
+    <div class="sec-h">
+      <div><div class="rule"></div><h2>子系列与参数表</h2>
+        <div class="sub" id="subHint">点开看完整型号参数 · 参数照上海人民样本录入</div></div>
+      <div style="display:flex;gap:9px;flex-wrap:wrap">
+        <button class="btn btn-g" id="openAll">全部展开</button>
+        <a class="btn btn-g" href="pumps.html" id="filterLink">在这个系列里选型 →</a>
+      </div>
+    </div>
+    <div class="subs" id="subs"></div>
+  </section>
+
+  <div class="cta">
+    <div class="t"><h3>要哪个型号，直接报给我们</h3>
+      <p>表里点「复制型号并询价」会把整行参数复制好，粘给我们就行。不确定选哪个也可以直接说工况。</p></div>
+    <div class="acts">
+      <a class="tel btn btn-p" href="tel:13690528818">13690528818</a>
+      <a class="btn btn-s" href="#" data-wechat>扫码加微信</a>
+    </div>
+  </div>
+
+  <section class="sect" style="padding-top:0">
+    <div class="sec-h"><div><div class="rule"></div><h2>其他系列</h2></div></div>
+    <div class="sgrid" id="others"></div>
+  </section>
+</div>
+
+<script src="../data/catalog.js"></script>
+<script src="../data/series-copy.js"></script>
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/finder.js"></script>
+<script>
+DF.init('水泵');
+DF.foot();
+DF.wireAsk();
+var D = window.DF_DATA, C = window.DF_COPY;
+var id = new URLSearchParams(location.search).get('s') || D.series[0].id;
+var S = D.series.filter(function (x) { return x.id === id })[0] || D.series[0];
+var K = C[S.id] || { tag: '', lead: '', uses: [], pick: '' };
+
+document.title = S.name + ' · 上海人民 SRM 全型号参数 | 鼎烽机电商行';
+document.getElementById('cbName').textContent = S.name;
+document.getElementById('hName').textContent = S.name;
+
+document.getElementById('hTags').innerHTML =
+  '<span class="chip rust">上海人民 SRM · 广佛总代理</span>' +
+  (K.tag ? '<span class="chip">' + DF.esc(K.tag) + '</span>' : '') +
+  '<span class="chip">' + S.count + ' 个型号</span>' +
+  '<span class="chip">样本 P' + S.pageFrom + '–' + S.pageTo + '</span>' +
+  '<span class="chip">' + DF.esc(S.codes) + '</span>';
+
+document.getElementById('hStats').innerHTML =
+  [['流量', DF.rng(S.flow, ''), 'm³/h'], ['扬程', DF.rng(S.head, ''), 'm'],
+   ['功率', DF.rng(S.kw, ''), 'kW'], ['子系列', S.subs.length, '个']]
+  .filter(function (x) { return x[1] !== '—' })
+  .map(function (x) {
+    return '<div class="pstat"><b>' + x[1] + '</b><span>' + x[0] + ' ' + x[2] + '</span></div>';
+  }).join('');
+
+document.getElementById('lead').textContent = K.lead;
+document.getElementById('uses').innerHTML = (K.uses || []).map(function (u, i) {
+  return '<div class="use"><b>' + String(i + 1).padStart(2, '0') + '</b><span>' + DF.esc(u) + '</span></div>';
+}).join('');
+document.getElementById('pick').innerHTML = K.pick
+  ? '<b>选型要点　</b>' + DF.esc(K.pick) : '<b>选型要点　</b>拿不准直接打 13690528818，报工况我们帮你定。';
+
+/* 图廊 */
+var big = document.getElementById('galBig'), th = document.getElementById('galThumbs');
+function showPic(i) {
+  big.innerHTML = S.images.length
+    ? '<img src="../' + S.images[i] + '" alt="' + DF.esc(S.name) + '">'
+    : '<span class="none">这个系列的产品图待补<br>门店实拍后放进 assets/ 即可</span>';
+  [].forEach.call(th.children, function (b, j) { b.setAttribute('aria-current', String(j === i)) });
+}
+th.innerHTML = S.images.length > 1 ? S.images.map(function (f) {
+  return '<button type="button"><img src="../' + f + '" alt=""></button>';
+}).join('') : '';
+th.addEventListener('click', function (e) {
+  var b = e.target.closest('button'); if (b) showPic([].indexOf.call(th.children, b));
+});
+showPic(0);
+
+/* 子系列 + 参数表 */
+var tables = D.tables.filter(function (t) { return t.seriesId === S.id });
+var byTitle = {};
+tables.forEach(function (t) { (byTitle[t.title] = byTitle[t.title] || []).push(t) });
+
+document.getElementById('subs').innerHTML = Object.keys(byTitle).map(function (title, i) {
+  var ts = byTitle[title];
+  var n = ts.reduce(function (a, t) { return a + t.rows.length }, 0);
+  var pages = ts.map(function (t) { return 'P' + t.page }).join(' ');
+  var body = ts.map(function (t) {
+    var h = '<div class="tblscroll"><table class="mt"><thead><tr>' +
+      t.cols.map(function (c) { return '<th>' + DF.esc(c) + '</th>' }).join('') +
+      '<th></th></tr></thead><tbody>';
+    h += t.rows.map(function (r) {
+      var mi = t.cols.findIndex(function (c) { return /规格型号|^型号$|消防泵组型号/.test(c) });
+      var model = mi >= 0 ? r[mi] : '';
+      var line = t.cols.map(function (c, k) {
+        return (r[k] === undefined || r[k] === null || r[k] === '') ? null : c + ' ' + r[k];
+      }).filter(Boolean).join(' · ');
+      return '<tr>' + t.cols.map(function (c, k) {
+        var v = r[k], cls = (typeof v === 'number') ? 'n' : (k === mi ? 'm' : '');
+        return '<td class="' + cls + '">' + DF.cell(v) + '</td>';
+      }).join('') +
+        (model ? '<td><button class="askbtn" data-ask="' + DF.esc(line + '　【' + S.name + '｜上海人民 SRM】') + '">复制并询价</button></td>' : '<td></td>') +
+        '</tr>';
+    }).join('');
+    h += '</tbody></table></div>';
+    if (t.subtitle) h = '<div class="srem"><b>' + DF.esc(t.subtitle) + '</b></div>' + h;
+    if (t.remark) h += '<div class="srem"><b>样本原注　</b>' + DF.esc(t.remark) + '</div>';
+    if (t.note) h += '<div class="snote"><b>存疑 · 已照原样本录入　</b>' + DF.esc(t.note) + '</div>';
+    return h;
+  }).join('');
+  return '<details class="subitem"' + (i === 0 ? ' open' : '') + '>' +
+    '<summary class="subitem-h"><span class="st">' + DF.esc(title) + '</span>' +
+    '<span class="sn">' + n + ' 型号 · 样本 ' + pages + '</span>' +
+    '<svg class="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">' +
+    '<path d="M6 9l6 6 6-6"/></svg></summary>' +
+    '<div class="subitem-b">' + body + '</div></details>';
+}).join('');
+
+document.getElementById('openAll').addEventListener('click', function () {
+  var ds = document.querySelectorAll('#subs details');
+  var anyClosed = [].some.call(ds, function (d) { return !d.open });
+  [].forEach.call(ds, function (d) { d.open = anyClosed });
+  this.textContent = anyClosed ? '全部收起' : '全部展开';
+});
+document.getElementById('filterLink').href = 'pumps.html?s=' + S.id;
+
+/* 其他系列 */
+document.getElementById('others').innerHTML = D.series
+  .filter(function (x) { return x.id !== S.id }).slice(0, 4)
+  .map(function (s) { return DF.seriesCard(s, '../').replace('href="../products/', 'href="') })
+  .join('');
+</script>
+</body>
+</html>

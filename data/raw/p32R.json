@@ -1,0 +1,6 @@
+{"crop":"p32R","catalogPage":"54","tables":[{
+ "title":"不锈钢耦合装置系列/Stainless steel coupling device series","kind":"accessory",
+ "cols":["序号","规格型号","参数","重量(Kg)","导轨直径(mm)"],
+ "rows":[
+ [1,"OH-50S","50mm",11,25],[2,"OH-65S","65mm",12,25],[3,"OH-80S","80mm",24,40],
+ [4,"OH-100S","100mm",28,40],[5,"OH-150S","150mm",45,40],[6,"OH-200S","200mm",66,40]]}]}

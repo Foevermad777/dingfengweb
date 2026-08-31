@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>电机 · YE3 系列三相异步电动机 全型号参数查询 | 鼎烽机电商行</title>
+<meta name="description" content="YE3系列三相异步电动机（GB18613-2020 三级能效 IE3）全型号参数：机座号63-355、功率0.12-375kW、2/4/6/8/10极共144个型号，可按功率、极数、机座号筛选。佛山南海鼎烽机电商行 13690528818。">
+<meta name="keywords" content="YE3电机,三相异步电动机,IE3高效电机,佛山电机,南海电机,YE3-132S-4,节能电机">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/product.css">
+<style>
+.mhero{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.mpic{background:linear-gradient(160deg,#EDF2F7,#D9E3EB);border-radius:14px;height:290px;
+  position:relative;overflow:hidden;display:grid;place-items:center}
+.mpic img{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);
+  object-fit:contain;filter:drop-shadow(0 14px 26px rgba(20,45,70,.22))}
+.specs{display:grid;grid-template-columns:auto 1fr;gap:9px 20px;font-size:14.5px;margin-top:6px}
+.specs dt{color:var(--ink-3);white-space:nowrap}
+.specs dd{margin:0}
+.poles{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.pbtn{font:inherit;font-size:13.5px;background:var(--card);border:1px solid var(--line);
+  border-radius:999px;padding:6px 15px;cursor:pointer;color:var(--ink-2)}
+.pbtn:hover{border-color:var(--blue-ink);color:var(--blue-ink)}
+.pbtn[aria-pressed="true"]{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff}
+@media (max-width:880px){.mhero{grid-template-columns:1fr;gap:22px}.mpic{height:220px}}
+</style>
+</head>
+<body class="page">
+
+<header class="phead">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">首页</a><i>/</i>产品中心<i>/</i>电机</div>
+    <h1>电机</h1>
+    <div class="ptag">
+      <span class="chip rust">华德曼 HUADEMAN</span>
+      <span class="chip">YE3 系列 · IE3 三级能效</span>
+      <span class="chip"><span id="tN">144</span> 个型号</span>
+      <span class="chip">机座 63–355</span>
+      <span class="chip">现货 · 厂价直销</span>
+    </div>
+    <p class="plede">YE3 系列三相异步电动机，符合 GB18613-2020 三级能效（IE3）。0.12kW 到 375kW，2/4/6/8/10 极全覆盖（厂家概述标称机座 63–355、功率至 400kW）。下面可以直接按功率和转速筛型号。</p>
+    <div class="pstats" id="hStats"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="finder" id="finder">
+    <h2>按功率 / 转速查型号</h2>
+    <p class="fhint">知道要几个千瓦、几极，直接筛；知道型号就直接搜。</p>
+    <div class="frow">
+      <div class="fld"><label for="fkw1">功率下限</label>
+        <div class="ipwrap"><input id="fkw1" type="number" inputmode="decimal" min="0" step="any" placeholder="不限"><span class="u">kW</span></div></div>
+      <div class="fld"><label for="fkw2">功率上限</label>
+        <div class="ipwrap"><input id="fkw2" type="number" inputmode="decimal" min="0" step="any" placeholder="不限"><span class="u">kW</span></div></div>
+      <div class="fld"><label for="ffr">机座号</label>
+        <div class="ipwrap"><select id="ffr"><option value="">不限</option></select></div></div>
+      <div class="fld"><label for="fk">型号关键词</label>
+        <div class="ipwrap"><input id="fk" type="search" placeholder="如 132S / YE3-90L"></div></div>
+    </div>
+    <div class="facts-row">
+      <div class="poles" id="poles">
+        <button class="pbtn" data-p="" aria-pressed="true">全部极数</button>
+        <button class="pbtn" data-p="2" aria-pressed="false">2 极 3000r/min</button>
+        <button class="pbtn" data-p="4" aria-pressed="false">4 极 1500r/min</button>
+        <button class="pbtn" data-p="6" aria-pressed="false">6 极 1000r/min</button>
+        <button class="pbtn" data-p="8" aria-pressed="false">8 极 750r/min</button>
+        <button class="pbtn" data-p="10" aria-pressed="false">10 极 600r/min</button>
+      </div>
+      <div class="fbtns"><button class="btn btn-g" id="fclr">清空</button></div>
+    </div>
+    <p class="fnote">配水泵最常用 2 极和 4 极；输送、搅拌类低速设备多用 4 极或 6 极。<b>不确定就报设备和用途，我们帮你配。</b></p>
+  </section>
+
+  <section class="res" id="res"></section>
+
+  <section class="sect">
+    <div class="mhero">
+      <div>
+        <div class="rule"></div>
+        <h2 style="font-size:24px;font-weight:600;margin-bottom:10px">YE3 系列是什么</h2>
+        <div class="prose">
+          <p>三相异步电动机里的<strong>高效节能款</strong>。同样干活，比老式 Y/Y2 系列省电——效率符合国标 GB18613-2020 规定的 3 级能效（国际 IE3）。现在很多工程验收和节能改造项目直接要求上 IE3。</p>
+          <p>F 级绝缘、IP55 防护，粉尘和水汽环境也能用；噪声低、振动小，适合需要长期连续运行的场合。</p>
+        </div>
+        <dl class="specs">
+          <dt>机座号</dt><dd>63 ～ 355</dd>
+          <dt>功率范围</dt><dd>性能表 0.12 ～ 375 kW<br><span style="color:var(--ink-3);font-size:13px">厂家概述标称 0.12～400kW</span></dd>
+          <dt>电压 / 频率</dt><dd>380V / 50Hz</dd>
+          <dt>能效等级</dt><dd>GB18613-2020 三级（IE3）</dd>
+          <dt>工作制</dt><dd>S1 连续工作制</dd>
+          <dt>冷却方式</dt><dd>IC411 自扇冷</dd>
+          <dt>绝缘 / 防护</dt><dd>F 级绝缘 · IP55</dd>
+          <dt>典型用途</dt><dd>风机、水泵、机床等需节能连续运行的一般场所</dd>
+        </dl>
+      </div>
+      <div class="mpic"><img src="../assets/motors/ye3.jpg" alt="YE3 系列三相异步电动机"></div>
+    </div>
+  </section>
+
+  <section class="sect" style="padding-top:0">
+    <div class="sec-h"><div><div class="rule"></div><h2>代理与常备品牌</h2>
+      <div class="sub">门店实际在售品牌</div></div></div>
+    <div class="brands" id="brandWrap"></div>
+  </section>
+
+  <section class="sect" style="padding-top:0">
+    <div class="sec-h"><div><div class="rule"></div><h2>其他可询价的电机类型</h2>
+      <div class="sub">以下类型均可代订代配，现货情况请电询</div></div></div>
+    <div class="brands" id="types"></div>
+  </section>
+
+  <section class="sect" style="padding-top:0">
+    <div class="sec-h"><div><div class="rule"></div><h2>报需求时告诉我们这几项</h2>
+      <div class="sub">有这些信息，一个电话就能定下来</div></div></div>
+    <div class="uses" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px" id="asks"></div>
+  </section>
+
+  <div class="cta">
+    <div class="t"><h3>配套一起买更省事</h3>
+      <p>电机、减速机、水泵在同一家配齐，功率、转速、接口我们帮你对好，出问题也只找一家。</p></div>
+    <div class="acts">
+      <a class="tel btn btn-p" href="tel:13690528818">13690528818</a>
+      <a class="btn btn-s" href="reducers.html">看减速机 →</a>
+    </div>
+  </div>
+</div>
+
+<script src="../data/motors.js"></script>
+<script src="../data/brands.js"></script>
+<script src="../assets/js/site.js"></script>
+<script>
+DF.init('电机'); DF.foot();
+var M = window.DF_MOTORS, R = M.rows;
+document.getElementById('tN').textContent = R.length;
+
+document.getElementById('hStats').innerHTML =
+  [['功率范围', Math.min.apply(null,R.map(r=>r.kw)) + '–' + Math.max.apply(null,R.map(r=>r.kw)), 'kW'],
+   ['机座号', '63–355', ''],
+   ['极数', '2 / 4 / 6 / 8 / 10', '极'],
+   ['型号', R.length, '个']]
+  .map(x => '<div class="pstat"><b>' + x[1] + '</b><span>' + x[0] + (x[2] ? ' ' + x[2] : '') + '</span></div>').join('');
+
+var frames = [];
+R.forEach(function (r) { if (r.frame && frames.indexOf(r.frame) < 0) frames.push(r.frame) });
+frames.sort(function (a, b) { return a - b });
+var ffr = document.getElementById('ffr');
+frames.forEach(function (f) {
+  var n = R.filter(function (r) { return r.frame === f }).length;
+  ffr.insertAdjacentHTML('beforeend', '<option value="' + f + '">' + f + ' 机座（' + n + '）</option>');
+});
+
+document.getElementById('brandWrap').innerHTML = ((window.DF_BRANDS || {}).motors || [])
+  .map(function (b) { return '<div class="brand-c"><b>' + DF.esc(b.name) + '</b><span>' + DF.esc(b.note || '') + '</span></div>' }).join('')
+  || '<div class="brand-c"><b>品牌清单待补</b><span>填 data/brands.js 即可显示</span></div>';
+document.getElementById('types').innerHTML = ((window.DF_TYPES || {}).motors || [])
+  .map(function (t) { return '<div class="brand-c"><b>' + t[0] + '</b><span>' + t[1] + '</span></div>' }).join('');
+document.getElementById('asks').innerHTML = ['功率 kW', '转速 / 极数（2极 4极 6极）', '电压 220V 还是 380V',
+  '机座号或轴径', '安装方式：卧式底脚 B3 / 立式法兰 B5 / B35', '使用环境：普通 / 户外 / 防爆 / 高温',
+  '要不要变频、要不要刹车', '用在什么设备上']
+  .map(function (t, i) { return '<div class="use"><b>' + String(i + 1).padStart(2, '0') + '</b><span>' + t + '</span></div>' }).join('');
+
+/* 检索 */
+var pole = '', limit = 80, res = document.getElementById('res');
+function val(id) { var v = document.getElementById(id).value.trim(); return v === '' ? null : parseFloat(v) }
+function run() {
+  var lo = val('fkw1'), hi = val('fkw2'), fr = document.getElementById('ffr').value;
+  var kw = document.getElementById('fk').value.trim().toLowerCase().replace(/\s+/g, '');
+  var rows = R.filter(function (r) {
+    if (pole && String(r.poles) !== pole) return false;
+    if (lo != null && !(r.kw >= lo)) return false;
+    if (hi != null && !(r.kw <= hi)) return false;
+    if (fr && r.frame !== fr) return false;
+    if (kw && r.model.toLowerCase().replace(/\s+/g, '').indexOf(kw) < 0) return false;
+    return true;
+  }).sort(function (a, b) { return a.poles - b.poles || a.kw - b.kw });
+  paint(rows);
+}
+function paint(rows) {
+  var note = rows.some(function (r) { return r.note });
+  var h = '<div class="res-h"><h2>型号参数</h2><span class="cnt">' + rows.length + ' 条</span></div>';
+  if (!rows.length) {
+    res.innerHTML = h + '<div class="tblbox"><div class="nores"><b>没有匹配的型号</b>' +
+      '放宽条件试试，或直接打 13690528818，非标规格也能代订。</div></div>';
+    return;
+  }
+  h += '<div class="tblbox"><div class="tblscroll"><table class="mt"><thead><tr>' +
+    '<th>规格型号</th><th>功率 kW</th><th>电流 A</th><th>转速 r/min</th><th>极数</th>' +
+    '<th>效率 %</th><th>功率因数</th><th>额定转矩 N·m</th>' +
+    '<th>堵转转矩 Tst/TN</th><th>堵转电流 Ist/IN</th><th>最大转矩 Tmax/TN</th><th>噪声 dB(A)</th><th></th>' +
+    '</tr></thead><tbody>';
+  h += rows.slice(0, limit).map(function (r) {
+    var spec = r.model + ' · ' + r.kw + 'kW · ' + r.rpm + 'r/min · ' + r.poles + '极 · ' +
+      r.amp + 'A · 380V　【YE3 三相异步电动机 IE3】';
+    return '<tr><td class="m">' + DF.esc(r.model) + (r.note ? ' <span class="chip rust" style="font-size:10px;padding:1px 6px">存疑</span>' : '') + '</td>' +
+      '<td class="n">' + r.kw + '</td><td class="n">' + r.amp + '</td><td class="n">' + r.rpm + '</td>' +
+      '<td class="n">' + r.poles + '</td><td class="n">' + r.eff + '</td><td class="n">' + r.pf + '</td>' +
+      '<td class="n">' + r.nm + '</td><td class="n">' + r.tst + '</td><td class="n">' + r.ist + '</td>' +
+      '<td class="n">' + r.tmax + '</td><td class="n">' + r.db + '</td>' +
+      '<td><button class="askbtn" data-ask="' + DF.esc(spec) + '">复制型号并询价</button></td></tr>';
+  }).join('');
+  h += '</tbody></table></div>';
+  if (rows.length > limit) h += '<div class="more"><button class="btn btn-g" id="more">还有 ' +
+    (rows.length - limit) + ' 条 · 显示更多</button></div>';
+  h += '</div>';
+  if (note) h += '<p class="fnote" style="margin-top:10px"><b>标「存疑」的型号：</b>' +
+    '厂家样本上这几个型号中间有一个字符印缺了（YE3-355 系列），我们照原样本录入未作猜测。' +
+    '要订这几个规格请电话确认准确型号。</p>';
+  res.innerHTML = h;
+}
+document.getElementById('poles').addEventListener('click', function (e) {
+  var b = e.target.closest('.pbtn'); if (!b) return;
+  pole = b.dataset.p; limit = 80;
+  [].forEach.call(this.children, function (x) { x.setAttribute('aria-pressed', String(x === b)) });
+  run();
+});
+['fkw1', 'fkw2', 'fk'].forEach(function (i) {
+  document.getElementById(i).addEventListener('input', function () { limit = 80; run() });
+});
+document.getElementById('ffr').addEventListener('change', function () { limit = 80; run() });
+document.getElementById('fclr').addEventListener('click', function () {
+  ['fkw1', 'fkw2', 'fk'].forEach(function (i) { document.getElementById(i).value = '' });
+  document.getElementById('ffr').value = ''; pole = ''; limit = 80;
+  [].forEach.call(document.getElementById('poles').children, function (x, j) {
+    x.setAttribute('aria-pressed', String(j === 0));
+  });
+  run();
+});
+res.addEventListener('click', function (e) { if (e.target.closest('#more')) { limit += 120; run(); } });
+DF.wireAsk();
+run();
+</script>
+</body>
+</html>

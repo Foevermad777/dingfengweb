@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>鼎烽机电商行 · 佛山南海水泵电机减速机 · 上海人民广佛总代理</title>
+<meta name="description" content="佛山市南海区鼎烽机电商行，深耕机电行业20年，上海人民企业集团（SRM人企）广佛总代理。主营各大品牌水泵、电机、减速机，2000+型号现货，厂价直销。电话 13690528818。">
+<meta name="keywords" content="佛山水泵,南海水泵,广佛五金城水泵,上海人民水泵,人企水泵,佛山电机,佛山减速机,潜水排污泵,离心泵,深井泵">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+body{overflow:hidden}
+.deck{height:100svh;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;
+  scroll-behavior:smooth;-webkit-overflow-scrolling:touch;overscroll-behavior:none}
+/* JS 接管翻页后：关掉原生惯性与 snap，改由脚本做定时定距的换页 */
+.deck.paged{overflow:hidden;scroll-snap-type:none;scroll-behavior:auto;touch-action:none}
+.screen{height:100svh;scroll-snap-align:start;scroll-snap-stop:always;position:relative;
+  display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+
+/* ── 屏 1 门头 ─────────────────────────────────────────────── */
+.s1{color:#fff}
+.s1-bg{position:absolute;inset:0;background:#08131C}
+.s1-bg img{width:100%;height:100%;object-fit:cover;opacity:.62}
+.s1-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(100deg,rgba(8,19,28,.94) 0%,rgba(8,19,28,.74) 42%,rgba(8,19,28,.28) 78%),
+             linear-gradient(to top,rgba(8,19,28,.9),transparent 42%)}
+.s1-in{position:relative;z-index:2;width:100%;max-width:1240px;margin:0 auto;
+  padding:calc(var(--nav-h) + 4vh) 28px 15vh;
+  display:flex;flex-direction:column;justify-content:center;gap:clamp(34px,6vh,64px);height:100%}
+.s1-lead{max-width:min(100%,720px)}
+.s1 .stamp{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(255,255,255,.3);
+  border-left:3px solid var(--rust);border-radius:5px;padding:7px 14px;font-size:13px;
+  letter-spacing:.03em;background:rgba(8,19,28,.4);margin-bottom:24px}
+.s1 .stamp b{color:#fff;font-weight:600}
+.s1 .stamp span{color:rgba(255,255,255,.72)}
+.s1 h1{font-size:clamp(40px,7.6vw,88px);line-height:1.02;font-weight:700;letter-spacing:-.02em;
+  margin:0 0 14px}
+.s1 h1 em{font-style:normal;color:var(--blue);font-family:var(--cond);font-size:1.06em}
+.s1 .cats{display:flex;align-items:center;flex-wrap:wrap;
+  font-family:var(--cond);font-size:clamp(21px,3.6vw,36px);font-weight:600;
+  letter-spacing:.12em;margin:0 0 22px}
+.s1 .cats a{color:rgba(255,255,255,.9);text-decoration:none;padding:2px 0;
+  border-bottom:2px solid transparent;transition:color .16s,border-color .16s}
+.s1 .cats a:hover{color:#fff;border-bottom-color:var(--rust)}
+.s1 .cats i{font-style:normal;color:var(--rust);padding:0 12px;font-weight:400}
+.s1 .lede{max-width:48ch;color:rgba(255,255,255,.78);font-size:clamp(15px,1.6vw,17px);margin:0}
+
+/* 数据条 —— 等宽分栏，带竖分隔 */
+.s1 .facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  border-top:1px solid rgba(255,255,255,.18);padding-top:24px}
+.s1 .fact{padding:2px 22px;border-left:1px solid rgba(255,255,255,.12)}
+.s1 .fact:first-child{padding-left:0;border-left:0}
+.s1 .fact b{display:block;font-family:var(--cond);font-size:clamp(26px,3.4vw,40px);font-weight:700;
+  line-height:1;color:#fff;letter-spacing:-.01em}
+.s1 .fact b small{font-size:.5em;font-weight:600;margin-left:2px}
+.s1 .fact span{display:block;margin-top:8px;font-size:12.5px;color:rgba(255,255,255,.6);
+  letter-spacing:.06em}
+.hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:3;
+  display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.6);
+  font-size:11.5px;letter-spacing:.18em;font-family:var(--mono);pointer-events:none}
+.hint i{width:1px;height:26px;background:linear-gradient(rgba(255,255,255,.65),transparent);
+  animation:drop 1.9s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}
+  55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+@media (max-width:1080px){
+  .s1 .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 0}
+  .s1 .fact:nth-child(2n+1){padding-left:0;border-left:0}
+}
+@media (max-width:640px){
+  .s1-in{padding:calc(var(--nav-h) + 3vh) 20px 13vh;gap:28px}
+  .s1 .stamp{margin-bottom:18px;font-size:12px;padding:6px 11px}
+  .s1 .cats i{padding:0 7px}
+  .s1 .facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 0;padding-top:18px}
+  .s1 .fact{padding:2px 16px}
+  .s1 .fact:nth-child(2n+1){padding-left:0;border-left:0}
+  .s1 .fact span{margin-top:5px;font-size:11.5px}
+}
+
+/* ── 屏 2 斜切三分类 ───────────────────────────────────────── */
+.s2{background:var(--void)}
+.s2-top{position:absolute;top:calc(var(--nav-h) + 22px);left:0;right:0;z-index:6;text-align:center;
+  pointer-events:none;padding:0 24px}
+.s2-top .k{font-family:var(--mono);font-size:11.5px;letter-spacing:.22em;color:rgba(255,255,255,.5);
+  text-transform:uppercase}
+.s2-top .t{font-size:clamp(17px,2.4vw,22px);color:#fff;font-weight:600;margin-top:4px}
+.split{position:absolute;inset:0}
+.wedge{position:absolute;inset:0;display:block;text-decoration:none;overflow:hidden;
+  transition:clip-path .42s cubic-bezier(.4,.05,.2,1);will-change:clip-path}
+.wedge .bg{position:absolute;inset:0}
+.wedge .ph{position:absolute;inset:0;background-size:cover;background-position:center;
+  transition:transform .5s cubic-bezier(.4,.05,.2,1);transform:scale(1.02)}
+.wedge .tint{position:absolute;inset:0}
+.wedge .art{position:absolute;bottom:-3%;left:50%;translate:-50% 0;height:64%;width:auto;
+  object-fit:contain;object-position:bottom;filter:drop-shadow(0 24px 44px rgba(0,0,0,.55));
+  transition:height .45s cubic-bezier(.4,.05,.2,1),translate .45s cubic-bezier(.4,.05,.2,1);
+  pointer-events:none}
+.wedge .art-wide{height:auto;width:min(26vw,330px);bottom:14%}
+/* 产品图跟随各自楔形的中心移动 */
+.split .w1 .art{left:16.5%} .split .w2 .art{left:50%} .split .w3 .art{left:83.5%}
+.split[data-h="1"] .w1 .art{left:25%} .split[data-h="1"] .w2 .art{left:66%} .split[data-h="1"] .w3 .art{left:90%}
+.split[data-h="2"] .w1 .art{left:11%} .split[data-h="2"] .w2 .art{left:50%} .split[data-h="2"] .w3 .art{left:90%}
+.split[data-h="3"] .w1 .art{left:10%} .split[data-h="3"] .w2 .art{left:35%} .split[data-h="3"] .w3 .art{left:73%}
+.wedge .art{transition:height .45s cubic-bezier(.4,.05,.2,1),width .45s cubic-bezier(.4,.05,.2,1),
+  left .42s cubic-bezier(.4,.05,.2,1)}
+.split[data-h="1"] .w1 .art-wide,.split[data-h="3"] .w3 .art-wide{width:min(30vw,400px)}
+.w1 .tint{background:linear-gradient(165deg,#123249 0%,#0A1B27 100%)}
+.w2 .tint{background:linear-gradient(165deg,#17405F 0%,#0B2130 100%)}
+.w3 .tint{background:linear-gradient(165deg,#2A2F3A 0%,#111721 100%)}
+.wedge::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(6,14,21,.8) 0%,rgba(6,14,21,.15) 34%,rgba(6,14,21,.62) 100%)}
+/* 空图占位的机加工纹理 */
+.wedge.empty .tint{background-image:
+  repeating-linear-gradient(122deg,rgba(255,255,255,.045) 0 2px,transparent 2px 15px),
+  linear-gradient(165deg,#1B2330 0%,#0C131B 100%)}
+
+/* 切割线：与楔形同一套百分比坐标，随悬停一起移动 */
+.cuts{position:absolute;inset:0;z-index:4;pointer-events:none}
+.cut{position:absolute;inset:0;transition:clip-path .42s cubic-bezier(.4,.05,.2,1);
+  background:linear-gradient(to bottom,rgba(120,175,235,.06),rgba(150,195,245,.75) 34%,
+             rgba(190,120,70,.55) 72%,rgba(120,175,235,.06))}
+.split .cut1{clip-path:polygon(39.8% 0,40.05% 0,27.05% 100%,26.8% 100%)}
+.split .cut2{clip-path:polygon(73.2% 0,73.45% 0,60.45% 100%,60.2% 100%)}
+.split[data-h="1"] .cut1{clip-path:polygon(58.5% 0,58.75% 0,45.75% 100%,45.5% 100%)}
+.split[data-h="1"] .cut2{clip-path:polygon(82.5% 0,82.75% 0,69.75% 100%,69.5% 100%)}
+.split[data-h="2"] .cut1{clip-path:polygon(30.5% 0,30.75% 0,17.75% 100%,17.5% 100%)}
+.split[data-h="2"] .cut2{clip-path:polygon(82.5% 0,82.75% 0,69.75% 100%,69.5% 100%)}
+.split[data-h="3"] .cut1{clip-path:polygon(30.5% 0,30.75% 0,17.75% 100%,17.5% 100%)}
+.split[data-h="3"] .cut2{clip-path:polygon(54.5% 0,54.75% 0,41.75% 100%,41.5% 100%)}
+
+.labels{position:absolute;inset:0;z-index:5;pointer-events:none}
+.lab{position:absolute;top:37%;transform:translate(-50%,-50%);text-align:center;color:#fff;
+  transition:left .42s cubic-bezier(.4,.05,.2,1);width:min(30vw,320px)}
+.lab::before{content:"";position:absolute;left:50%;top:50%;width:150%;height:230%;
+  transform:translate(-50%,-50%);border-radius:50%;z-index:-1;
+  background:radial-gradient(closest-side,rgba(5,12,19,.72),rgba(5,12,19,.34) 55%,transparent 78%)}
+.lab .zh{font-size:clamp(30px,5.6vw,68px);font-weight:700;letter-spacing:.1em;line-height:1.05;
+  text-shadow:0 2px 12px rgba(4,10,16,.95),0 0 46px rgba(4,10,16,.8);margin:0}
+.lab .en{font-family:var(--cond);font-size:clamp(11px,1.3vw,15px);letter-spacing:.3em;
+  color:rgba(255,255,255,.62);margin-top:6px;text-transform:uppercase}
+.lab .meta{margin-top:14px;font-family:var(--mono);font-size:12.5px;color:rgba(255,255,255,.8);
+  opacity:0;transform:translateY(6px);transition:opacity .3s,transform .3s}
+.lab .go{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:13px;
+  border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:5px 15px;
+  opacity:0;transform:translateY(6px);transition:opacity .3s .04s,transform .3s .04s}
+.lab .tag{display:inline-block;margin-top:10px;font-size:11.5px;font-family:var(--mono);
+  border:1px solid rgba(232,196,120,.5);color:#E9C87C;border-radius:999px;padding:3px 11px}
+
+/* 静止态 */
+.split .w1{clip-path:polygon(0 0,39.8% 0,26.8% 100%,0 100%)}
+.split .w2{clip-path:polygon(39.8% 0,73.2% 0,60.2% 100%,26.8% 100%)}
+.split .w3{clip-path:polygon(73.2% 0,100% 0,100% 100%,60.2% 100%)}
+.split .l1{left:16.5%} .split .l2{left:50%} .split .l3{left:83.5%}
+/* 悬停态 */
+.split[data-h="1"] .w1{clip-path:polygon(0 0,58.5% 0,45.5% 100%,0 100%)}
+.split[data-h="1"] .w2{clip-path:polygon(58.5% 0,82.5% 0,69.5% 100%,45.5% 100%)}
+.split[data-h="1"] .w3{clip-path:polygon(82.5% 0,100% 0,100% 100%,69.5% 100%)}
+.split[data-h="1"] .l1{left:25%} .split[data-h="1"] .l2{left:66%} .split[data-h="1"] .l3{left:90%}
+.split[data-h="2"] .w1{clip-path:polygon(0 0,30.5% 0,17.5% 100%,0 100%)}
+.split[data-h="2"] .w2{clip-path:polygon(30.5% 0,82.5% 0,69.5% 100%,17.5% 100%)}
+.split[data-h="2"] .w3{clip-path:polygon(82.5% 0,100% 0,100% 100%,69.5% 100%)}
+.split[data-h="2"] .l1{left:11%} .split[data-h="2"] .l2{left:50%} .split[data-h="2"] .l3{left:90%}
+.split[data-h="3"] .w1{clip-path:polygon(0 0,30.5% 0,17.5% 100%,0 100%)}
+.split[data-h="3"] .w2{clip-path:polygon(30.5% 0,54.5% 0,41.5% 100%,17.5% 100%)}
+.split[data-h="3"] .w3{clip-path:polygon(54.5% 0,100% 0,100% 100%,41.5% 100%)}
+.split[data-h="3"] .l1{left:10%} .split[data-h="3"] .l2{left:35%} .split[data-h="3"] .l3{left:73%}
+/* 被选中的那块：图放大、信息浮出 */
+.split[data-h="1"] .l1 .meta,.split[data-h="1"] .l1 .go,
+.split[data-h="2"] .l2 .meta,.split[data-h="2"] .l2 .go,
+.split[data-h="3"] .l3 .meta,.split[data-h="3"] .l3 .go{opacity:1;transform:none}
+.split[data-h="1"] .w1 .art,.split[data-h="2"] .w2 .art,.split[data-h="3"] .w3 .art{height:76%}
+.split[data-h="1"] .w1 .ph,.split[data-h="2"] .w2 .ph,.split[data-h="3"] .w3 .ph{transform:scale(1.09)}
+.split[data-h="1"] .w1::after,.split[data-h="2"] .w2::after,.split[data-h="3"] .w3::after{
+  background:linear-gradient(to top,rgba(6,14,21,.72) 0%,rgba(6,14,21,.04) 42%,rgba(6,14,21,.5) 100%)}
+.wedge:focus-visible{outline:3px solid var(--rust);outline-offset:-6px}
+
+/* 手机：斜切改横条 */
+@media (max-width:820px){
+  .split .w1{clip-path:polygon(0 0,100% 0,100% 37.3%,0 29.3%)}
+  .split .w2{clip-path:polygon(0 29.3%,100% 37.3%,100% 70.7%,0 62.7%)}
+  .split .w3{clip-path:polygon(0 62.7%,100% 70.7%,100% 100%,0 100%)}
+  .split[data-h] .w1{clip-path:polygon(0 0,100% 0,100% 37.3%,0 29.3%)}
+  .split[data-h] .w2{clip-path:polygon(0 29.3%,100% 37.3%,100% 70.7%,0 62.7%)}
+  .split[data-h] .w3{clip-path:polygon(0 62.7%,100% 70.7%,100% 100%,0 100%)}
+  .cut{background:linear-gradient(to right,rgba(120,175,235,.08),rgba(150,195,245,.7) 30%,
+       rgba(190,120,70,.5) 74%,rgba(120,175,235,.08))}
+  .split .cut1,.split[data-h] .cut1{clip-path:polygon(0 29.3%,100% 37.3%,100% 37.6%,0 29.6%)}
+  .split .cut2,.split[data-h] .cut2{clip-path:polygon(0 62.7%,100% 70.7%,100% 71%,0 63%)}
+  .lab,.split[data-h] .lab{left:50%!important;width:min(90vw,430px);
+    display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:15px;row-gap:3px;
+    align-items:center;justify-content:center;text-align:left}
+  .lab .zh{grid-column:1;grid-row:1 / -1;align-self:center;
+    font-size:clamp(28px,9vw,42px);letter-spacing:.05em}
+  .lab .en,.lab .go{display:none}
+  .lab .tag,.lab .meta{grid-column:2;margin:0;justify-self:start}
+  .lab .meta{opacity:1;transform:none;font-size:11.5px;line-height:1.6;
+    text-shadow:0 1px 8px rgba(4,10,16,.95),0 0 20px rgba(4,10,16,.8)}
+  .lab .tag{background:rgba(8,17,25,.62);backdrop-filter:blur(3px)}
+  .l1{top:20%!important} .l2{top:50%!important} .l3{top:81%!important}
+  .lab::before{display:none}
+  .s2-top .k{display:none}
+  .s2-top .t{font-size:14px;color:rgba(255,255,255,.7);font-weight:500}
+  .wedge .art{height:60%;left:auto;right:6%;translate:0 0;opacity:.9}
+  .s2-top{top:calc(var(--nav-h) + 8px)}
+}
+
+/* ── 屏 3 主推系列 ─────────────────────────────────────────── */
+.s3{background:var(--paper);justify-content:center}
+.s3-in{padding:calc(var(--nav-h) + 26px) 24px 26px;max-width:1240px;margin:0 auto;width:100%;
+  overflow:auto}
+.hot{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.hcard{background:var(--card);border:1px solid var(--line);border-radius:13px;overflow:hidden;
+  text-decoration:none;color:inherit;display:flex;flex-direction:column;
+  transition:border-color .18s,transform .18s,box-shadow .18s}
+.hcard:hover{border-color:var(--blue-ink);transform:translateY(-3px);box-shadow:var(--shadow-2)}
+.hcard .pic{height:min(26vh,208px);background:linear-gradient(160deg,#EEF3F7,#DCE5EC);
+  position:relative;overflow:hidden;display:grid;place-items:center}
+.hcard .pic img{position:absolute;inset:14px;width:calc(100% - 28px);height:calc(100% - 28px);
+  object-fit:contain;filter:drop-shadow(0 10px 18px rgba(20,45,70,.22));
+  transition:transform .25s}
+.hcard:hover .pic img{transform:scale(1.05)}
+.hcard .pic .none{font-size:12px;color:var(--ink-3);font-family:var(--mono)}
+.hcard .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.hcard h3{font-size:17px;font-weight:600;line-height:1.35}
+.hcard .codes{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hcard dl{margin:auto 0 0;display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:12.5px}
+.hcard dt{color:var(--ink-3)}
+.hcard dd{margin:0;font-family:var(--mono);color:var(--ink);font-variant-numeric:tabular-nums}
+.hcard .n{position:absolute;top:10px;right:10px;background:var(--void);color:#fff;
+  font-family:var(--mono);font-size:11.5px;border-radius:5px;padding:2px 8px}
+.s3 .more{display:flex;justify-content:center;margin-top:18px}
+@media (max-width:1000px){.hot{grid-template-columns:repeat(2,1fr)}
+  .hcard .pic{height:min(19vh,164px)}}
+@media (max-width:520px){.hot{grid-template-columns:1fr 1fr;gap:10px}
+  .hcard .bd{padding:10px 11px 12px} .hcard h3{font-size:14.5px}
+  .hcard dl{font-size:11.5px} .hcard .codes{display:none}}
+
+/* ── 屏 4 联系 ────────────────────────────────────────────── */
+.s4{background:var(--void);color:#fff;justify-content:space-between}
+.s4-in{padding:calc(var(--nav-h) + 30px) 24px 0;max-width:1240px;margin:0 auto;width:100%;flex:1;
+  display:flex;flex-direction:column;justify-content:center}
+.s4 h2{font-size:clamp(26px,4.4vw,44px);font-weight:700;letter-spacing:-.01em;margin:0 0 10px}
+.s4 .sub{color:rgba(255,255,255,.65);max-width:50ch;margin:0 0 34px}
+.cgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:stretch}
+.cbox{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:14px;
+  padding:24px;display:flex;flex-direction:column;min-height:250px}
+.cbox h4{margin:0 0 16px;font-size:12px;font-family:var(--mono);letter-spacing:.18em;
+  color:rgba(255,255,255,.5);text-transform:uppercase}
+.cbox .body{flex:1}
+.cbox .big{font-family:var(--mono);font-size:clamp(26px,3.6vw,38px);font-weight:600;color:#fff;
+  text-decoration:none;display:inline-block;letter-spacing:-.01em}
+.cbox .big:hover{color:var(--blue)}
+.cbox .addr{font-size:16px;line-height:1.7;color:rgba(255,255,255,.86)}
+.cbox .hours{margin-top:12px;font-size:13.5px;color:rgba(255,255,255,.55)}
+.cbox .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.cbox .acts .btn{min-height:44px}
+.s4-b{border-top:1px solid rgba(255,255,255,.12);padding:16px 24px;font-size:12.5px;
+  color:rgba(255,255,255,.42);display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+@media (max-width:820px){.cgrid{grid-template-columns:1fr;gap:12px}
+  .cbox{padding:16px 18px;min-height:0}.s4 .sub{margin-bottom:18px}}
+
+/* 右侧屏点 */
+.dots{position:fixed;right:16px;top:50%;transform:translateY(-50%);z-index:60;
+  display:flex;flex-direction:column;gap:11px}
+.dots button{width:9px;height:9px;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.55);
+  background:transparent;cursor:pointer;transition:background .2s,transform .2s}
+.dots button[aria-current="true"]{background:#fff;transform:scale(1.35)}
+.dots.dark button{border-color:rgba(21,34,46,.45)}
+.dots.dark button[aria-current="true"]{background:var(--ink)}
+@media (max-width:820px){.dots{right:9px;gap:9px}.dots button{width:7px;height:7px}}
+@media (max-height:520px){.deck,.deck.paged{scroll-snap-type:none;overflow-y:auto;touch-action:auto}
+  .screen{height:auto;min-height:100svh}}
+</style>
+</head>
+<body class="home">
+
+<main class="deck" id="deck">
+
+  <!-- 屏 1 ─────────────────────────────────────────────────── -->
+  <section class="screen s1" id="sc1" aria-label="鼎烽机电商行">
+    <div class="s1-bg"><img src="assets/store/front.jpg" alt="佛山市南海区鼎烽机电商行门店" fetchpriority="high"></div>
+    <div class="s1-in">
+      <div class="s1-lead">
+        <div class="stamp"><b>上海人民企业集团 SRM 人企</b><span>广佛总代理</span></div>
+        <h1>深耕机电行业<em>20</em>年</h1>
+        <p class="cats"><a href="products/motors.html">电机</a><i>/</i><a href="products/pumps.html">水泵</a><i>/</i><a href="products/reducers.html">减速机</a></p>
+        <p class="lede">广佛五金城实体门店，各大品牌现货常备、厂价直销。报型号或说工况，当场给方案和价格。</p>
+      </div>
+      <div class="facts">
+        <div class="fact"><b id="fN">2130</b><span>在册型号</span></div>
+        <div class="fact"><b>20<small>年</small></b><span>行业经验</span></div>
+        <div class="fact"><b>3<small>大类</small></b><span>电机 · 水泵 · 减速机</span></div>
+        <div class="fact"><b>广佛</b><span>总代理 · 送货上门</span></div>
+      </div>
+    </div>
+    <div class="hint"><span>向下滚动</span><i></i></div>
+  </section>
+
+  <!-- 屏 2 斜切三分类 ─────────────────────────────────────── -->
+  <section class="screen s2" id="sc2" aria-label="三大产品分类">
+    <div class="s2-top">
+      <div class="k">Product Categories</div>
+      <div class="t">三大品类 · 点击进入</div>
+    </div>
+    <div class="split" id="split">
+      <a class="wedge w1" href="products/motors.html" data-i="1" aria-label="电机">
+        <span class="bg"><span class="tint"></span></span>
+        <img class="art art-wide" src="assets/motors/ye3-cut.png" alt="YE3 系列三相异步电动机">
+      </a>
+      <a class="wedge w2" href="products/pumps.html" data-i="2" aria-label="水泵">
+        <span class="bg"><span class="tint"></span></span>
+        <img class="art" src="assets/cutout/p08-65-438.png" alt="上海人民无堵塞潜水排污泵">
+      </a>
+      <a class="wedge w3" href="products/reducers.html" data-i="3" aria-label="减速机">
+        <span class="bg"><span class="tint"></span></span>
+        <img class="art art-wide" src="assets/reducers/f-cut.png" alt="F 系列平行轴斜齿轮减速机">
+      </a>
+      <div class="cuts"><i class="cut cut1"></i><i class="cut cut2"></i></div>
+      <div class="labels">
+        <div class="lab l1">
+          <p class="zh">电机</p><div class="en">Motors</div>
+          <div class="meta"><span id="mN">144</span> 个型号 · YE3 高效节能</div>
+          <div class="go">进入分类 →</div>
+        </div>
+        <div class="lab l2">
+          <p class="zh">水泵</p><div class="en">Pumps</div>
+          <div class="meta"><span id="pN">2130</span> 个型号 · 11 大系列</div>
+          <div class="go">进入分类 →</div>
+        </div>
+        <div class="lab l3">
+          <p class="zh">减速机</p><div class="en">Reducers</div>
+          <div class="meta"><span id="rN">38</span> 个机型 · R/S/K/F 系列</div>
+          <div class="go">进入分类 →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 屏 3 主推系列 ───────────────────────────────────────── -->
+  <section class="screen s3" id="sc3" aria-label="主推系列">
+    <div class="s3-in">
+      <div class="sec-h">
+        <div><div class="rule"></div><h2>主推系列</h2>
+          <div class="sub">佛山工程、工厂、农业用量最大的四个系列，常备现货</div></div>
+        <a class="btn btn-g" href="products/pumps.html">全部 11 个系列 →</a>
+      </div>
+      <div class="hot" id="hot"></div>
+    </div>
+  </section>
+
+  <!-- 屏 4 联系 ──────────────────────────────────────────── -->
+  <section class="screen s4" id="sc4" aria-label="联系我们">
+    <div class="s4-in">
+      <div class="rule" style="background:var(--rust)"></div>
+      <h2>报个型号，或者说说工况</h2>
+      <p class="sub">不清楚要哪一款也没关系——把用途、流量、扬程告诉我们，20 年经验帮你定型号。</p>
+      <div class="cgrid">
+        <div class="cbox">
+          <h4>电话 / 微信同号</h4>
+          <div class="body"><a class="big" href="tel:13690528818">13690528818</a></div>
+          <div class="acts">
+            <a class="btn btn-p" href="tel:13690528818">直接拨号</a>
+            <a class="btn btn-s" href="#" data-wechat>扫码加微信</a>
+          </div>
+        </div>
+        <div class="cbox">
+          <h4>门店地址</h4>
+          <div class="body">
+            <div class="addr">佛山市南海区黄岐<br>广佛五金城 9 号馆 20-21 号</div>
+            <div class="hours">营业时间待补 · 支持广佛全境送货</div>
+          </div>
+          <div class="acts"><a class="btn btn-s" href="contact.html">门店详情 →</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="s4-b">
+      <span>© <span id="yr"></span> 佛山市南海区鼎烽机电商行</span>
+      <span>上海人民企业集团广佛总代理</span>
+      <span>产品参数以实物为准</span>
+      <span>ICP 备案号待补</span>
+    </div>
+  </section>
+
+</main>
+
+<nav class="dots" id="dots" aria-label="页面导航">
+  <button aria-label="门头" data-t="sc1" aria-current="true"></button>
+  <button aria-label="三大品类" data-t="sc2"></button>
+  <button aria-label="主推系列" data-t="sc3"></button>
+  <button aria-label="联系我们" data-t="sc4"></button>
+</nav>
+
+<script src="data/catalog.js"></script>
+<script src="data/motors.js"></script>
+<script src="data/reducers.js"></script>
+<script src="assets/js/site.js"></script>
+<script>
+DF.init('首页');
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+var D = window.DF_DATA;
+var nMotor = (window.DF_MOTORS ? DF_MOTORS.rows.length : 0);
+var nRed = (window.DF_REDUCERS ? DF_REDUCERS.series.reduce(function(a,s){return a+s.sizes.length},0) : 0);
+document.getElementById('fN').textContent = D.products.length + nMotor;
+document.getElementById('pN').textContent = D.products.length;
+document.getElementById('mN').textContent = nMotor;
+document.getElementById('rN').textContent = nRed;
+
+/* 主推系列 —— 先按用量最大的四个系列做样例，改这一行即可换 */
+var HOT = ['wq-sewage', 'rm-centrifugal', 'deepwell', 'stainless'];
+var hot = document.getElementById('hot');
+hot.innerHTML = HOT.map(function (id) {
+  var s = D.series.filter(function (x) { return x.id === id })[0];
+  if (!s) return '';
+  var pic = s.images[0]
+    ? '<img src="' + s.images[0] + '" alt="' + s.name + '" loading="lazy">'
+    : '<span class="none">产品图待补</span>';
+  return '<a class="hcard" href="products/series.html?s=' + s.id + '">' +
+    '<div class="pic">' + pic + '<span class="n">' + s.count + ' 型号</span></div>' +
+    '<div class="bd"><h3>' + s.name + '</h3>' +
+    '<div class="codes">' + s.codes + '</div>' +
+    '<dl><dt>流量</dt><dd>' + DF.rng(s.flow, ' m³/h') + '</dd>' +
+    '<dt>扬程</dt><dd>' + DF.rng(s.head, ' m') + '</dd>' +
+    '<dt>功率</dt><dd>' + DF.rng(s.kw, ' kW') + '</dd></dl></div></a>';
+}).join('');
+
+/* 斜切悬停 */
+var split = document.getElementById('split');
+var fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+if (fine) {
+  split.querySelectorAll('.wedge').forEach(function (w) {
+    w.addEventListener('mouseenter', function () { split.dataset.h = w.dataset.i });
+    w.addEventListener('focus', function () { split.dataset.h = w.dataset.i });
+  });
+  split.addEventListener('mouseleave', function () { delete split.dataset.h });
+}
+
+/* 翻页控制：一次手势 = 一屏，定时定距，不跟惯性走 */
+var deck = document.getElementById('deck'), dots = document.getElementById('dots');
+var btns = [].slice.call(dots.querySelectorAll('button'));
+var screens = ['sc1', 'sc2', 'sc3', 'sc4'].map(function (i) { return document.getElementById(i) });
+var cur = 0, busy = false, guard = false, guardT = 0, acc = 0, accT = 0;
+var guardEnd = 0, lastT = -1e9, lastMag = 0;
+var DUR = 560, WHEEL = 45, SWIPE = 58;
+var QUIET = 90, MAXHOLD = 2500, GAP = 120, MINPUSH = 40;
+
+var paged = window.matchMedia('(min-height:521px)');
+var wasOn = null, wasH = 0;
+function sync() {
+  var on = paged.matches, h = deck.clientHeight;
+  if (on === wasOn && h === wasH) return;
+  wasOn = on; wasH = h;
+  deck.classList.toggle('paged', on);
+  if (!on) {                      /* 退出翻页模式：交还原生滚动，清掉所有锁 */
+    if (raf) { cancelAnimationFrame(raf); raf = 0 }
+    busy = false; guard = false; acc = 0; clearTimeout(guardT);
+  } else if (h) {                 /* 进入/恢复翻页模式：就近落到整屏 */
+    var i = Math.max(0, Math.min(screens.length - 1, Math.round(deck.scrollTop / h)));
+    deck.scrollTop = screens[i].offsetTop; mark(i);
+  }
+}
+sync();
+(paged.addEventListener ? paged.addEventListener('change', sync) : paged.addListener(sync));
+window.addEventListener('resize', sync);   /* 旋转屏幕 / 拉窗口高度时同步，别只等 mq */
+window.addEventListener('orientationchange', sync);
+
+function mark(i) {
+  cur = i;
+  btns.forEach(function (b, j) { b.setAttribute('aria-current', String(j === i)) });
+  dots.classList.toggle('dark', i === 2);
+  document.querySelector('.nav').classList.toggle('solid', i > 0);
+}
+mark(0);
+
+/* easeInOutCubic —— 起步果断、落位稳，不拖尾 */
+function ease(t) { return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2 }
+
+var raf = 0, dest = 0, slow = window.matchMedia('(prefers-reduced-motion:reduce)');
+function land() {          /* 落位：无论动画走完还是被打断，都停在整屏上 */
+  if (raf) { cancelAnimationFrame(raf); raf = 0 }
+  deck.scrollTop = screens[dest].offsetTop;
+  busy = false; acc = 0; arm();
+}
+function go(i, force) {
+  i = Math.max(0, Math.min(screens.length - 1, i));
+  if (!paged.matches || i === cur) return;
+  if (busy) { if (!force) return; cancelAnimationFrame(raf); raf = 0; }
+  var from = deck.scrollTop, d = screens[i].offsetTop - from;
+  dest = i; mark(i);
+  if (!d) { busy = false; return; }
+  if (slow.matches || document.hidden) { land(); return; }
+  busy = true;
+  var t0 = null;
+  raf = requestAnimationFrame(function step(t) {
+    if (document.hidden) { land(); return }
+    if (t0 === null) t0 = t;
+    var k = Math.min(1, (t - t0) / DUR);
+    deck.scrollTop = from + d * ease(k);
+    if (k < 1) raf = requestAnimationFrame(step); else { raf = 0; land() }
+  });
+}
+/* 切走标签页时 rAF 会停摆，回来时直接落位，避免卡在半屏 */
+document.addEventListener('visibilitychange', function () { if (busy) land() });
+/* 换页落位后设一道静默闸：只拦惯性余波，不拦真手势。
+   余波的特征是「连续 + 只衰减」，凡不符合的都当成新手势立刻放行 */
+function arm() {
+  guard = true; guardEnd = performance.now() + MAXHOLD;
+  clearTimeout(guardT); guardT = setTimeout(release, QUIET);
+}
+function release() { guard = false; acc = 0; clearTimeout(guardT); }
+function coast(ts, mag, gap, prev) {
+  if (gap > GAP) return false;                    /* 中间有停顿 —— 新手势 */
+  if (mag > prev * 1.15 + 4) return false;        /* 力度回升 —— 又推了一把 */
+  if (mag >= prev && mag >= MINPUSH) return false;/* 力度不衰减 —— 滚轮在持续输入 */
+  if (ts >= guardEnd) return false;               /* 兜底，闸门不会无限期挂着 */
+  return true;
+}
+/* 屏内还有可滚内容时（如主推系列），让内层先滚 */
+function inner(e, dy) {
+  for (var n = e.target; n && n !== deck; n = n.parentElement) {
+    if (n.scrollHeight - n.clientHeight > 2 && getComputedStyle(n).overflowY !== 'visible') {
+      if (dy > 0 && n.scrollTop + n.clientHeight < n.scrollHeight - 1) return true;
+      if (dy < 0 && n.scrollTop > 1) return true;
+    }
+  }
+  return false;
+}
+
+deck.addEventListener('wheel', function (e) {
+  if (!paged.matches) return;
+  var dy = e.deltaY * (e.deltaMode === 1 ? 16 : 1);
+  if (inner(e, dy)) return;
+  e.preventDefault();
+  var ts = e.timeStamp, mag = Math.abs(dy), gap = ts - lastT, prev = lastMag;
+  lastT = ts; lastMag = mag;                      /* 动画期间也要记，落位后好做比较 */
+  if (busy) return;
+  if (guard) {
+    if (coast(ts, mag, gap, prev)) {
+      clearTimeout(guardT); guardT = setTimeout(release, QUIET); return;
+    }
+    release();
+  }
+  if (ts - accT > 220) acc = 0;
+  accT = ts;
+  acc += dy;
+  if (Math.abs(acc) >= WHEEL) { var d = acc > 0 ? 1 : -1; acc = 0; go(cur + d); }
+}, { passive: false });
+
+var ty = 0, tmoved = 0, tactive = false;
+deck.addEventListener('touchstart', function (e) {
+  if (!paged.matches || e.touches.length > 1) return;
+  ty = e.touches[0].clientY; tmoved = 0; tactive = !busy;
+}, { passive: true });
+deck.addEventListener('touchmove', function (e) {
+  if (!paged.matches || !tactive) return;
+  tmoved = ty - e.touches[0].clientY;
+  if (inner(e, tmoved)) { tactive = false; return; }
+  e.preventDefault();
+}, { passive: false });
+deck.addEventListener('touchend', function () {
+  if (!tactive) return;
+  tactive = false;
+  if (Math.abs(tmoved) >= SWIPE) go(cur + (tmoved > 0 ? 1 : -1));
+});
+
+document.addEventListener('keydown', function (e) {
+  if (!paged.matches || e.target.closest('input,textarea,select')) return;
+  var k = e.key;
+  if (k === 'ArrowDown' || k === 'PageDown' || k === ' ') { e.preventDefault(); go(cur + 1) }
+  else if (k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); go(cur - 1) }
+  else if (k === 'Home') { e.preventDefault(); go(0) }
+  else if (k === 'End') { e.preventDefault(); go(screens.length - 1) }
+});
+
+btns.forEach(function (b, j) { b.addEventListener('click', function () { go(j, true) }) });
+</script>
+</body>
+</html>
