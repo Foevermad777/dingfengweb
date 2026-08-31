@@ -82,7 +82,7 @@ DF.foot = function () {
     '<li><a href="#" data-wechat>微信扫码咨询</a></li>' +
     '<li><a href="' + base + 'contact.html">门店地址与营业时间</a></li></ul></div>' +
     '</div><div class="foot-b"><span>© ' + new Date().getFullYear() + ' ' + DF.NAME + '</span>' +
-    '<span>营业执照信息待补</span><span>ICP 备案号待补</span>' +
+    '<span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener nofollow">粤ICP备2026105272号</a></span>' +
     '<span>产品参数以实物为准</span></div></div>';
   document.body.appendChild(f);
 };
