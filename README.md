@@ -81,3 +81,40 @@ python3 serve.py     # 然后打开 http://localhost:8811
 本次只提取了**四大系列的实际传动比总表**（样本第 7–10 页）和各系列的机型清单。
 另外 T / SWL·JW / CH / RV / 摆线针轮 五个系列目前只有系列介绍，型号明细待补。
 如需把选型表也录进来，属于一次独立的大工程，需要单独安排。
+
+## 线上部署
+
+正式地址：**https://dingfeng.maisiie.cn**
+
+挂在腾讯云轻量服务器 `122.51.255.11`，与 `maisiie.cn` 的 docker-compose 栈共用同一个 nginx
+（该 nginx 独占 80/443，同机第二个站点只能走它）。
+
+| 项 | 值 |
+|---|---|
+| 站点文件 | 宿主机 `/home/ubuntu/dingfengweb` → 容器 `/srv/dingfeng`（只读挂载） |
+| 配置 | `/home/ubuntu/maisisystem/deploy/nginx.conf` 末尾的鼎烽 server 块 |
+| 证书 | 并入 `maisiie.cn` 那张 SAN 证书（5 个域名），certbot 自动续期 |
+| 备案 | 粤ICP备2026105272号（沿用 maisiie.cn 主域名备案） |
+
+### 更新站点内容
+
+```bash
+./deploy.sh ubuntu@122.51.255.11:/home/ubuntu/dingfengweb/
+```
+
+改的是宿主机目录，容器只读挂载会立刻看到，**不需要重启任何容器**。
+
+### 注意：本站不 include common.inc
+
+`deploy/common.inc` 是给 maisi 的 SPA 写的，含三样对本站有害的东西：
+`/api/` 反代到 maisi 后端、SPA 回退（找不到页面返回首页）、`/assets/` 1 年 immutable 缓存
+（本站文件名不带 hash，会导致换图后长期不更新）。鼎烽的 server 块自带配置，只复用
+`tls.inc` 和 `security-headers.inc`，并单独开了 gzip（catalog.js 909KB → 59KB）。
+
+### 若要动这套栈，必须带 --env-file
+
+```bash
+docker compose --env-file .env.production -f docker-compose.prod.yml ...
+```
+
+漏了它，compose 会用空的 POSTGRES_*／JWT_SECRET 重建 db 和 api，导致 maisiie.cn 宕机。

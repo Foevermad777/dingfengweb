@@ -75,14 +75,42 @@ else
 cat >> deploy/nginx.conf <<NGINX
 
 # —— 鼎烽机电商行官网（静态站，文件在宿主机 /home/ubuntu/dingfengweb）——
+# 刻意不 include common.inc：那份是给 maisi 的 SPA 写的，含 /api/ 反代、
+# SPA 回退、以及 1 年 immutable 缓存，对本站三条都不适用。
 server {
   listen 443 ssl;
   listen [::]:443 ssl;
   http2 on;
   server_name $SUB;
   root /srv/dingfeng;
+  index index.html;
+
   include /etc/nginx/conf.d/tls.inc;
-  include /etc/nginx/conf.d/common.inc;
+  include /etc/nginx/conf.d/security-headers.inc;
+
+  # 本站数据文件较大（catalog.js 约 787KB），单独开 gzip，不影响其它 server
+  gzip on;
+  gzip_comp_level 6;
+  gzip_min_length 1024;
+  gzip_vary on;
+  gzip_types text/plain text/css application/javascript application/json image/svg+xml;
+
+  # 资源文件名不带 hash，用短缓存，换图后很快能刷新
+  location /assets/ {
+    expires 7d;
+    add_header Cache-Control "public" always;
+    include /etc/nginx/conf.d/security-headers.inc;
+  }
+  location /data/ {
+    expires 1h;
+    add_header Cache-Control "public" always;
+    include /etc/nginx/conf.d/security-headers.inc;
+  }
+
+  # 多页静态站：找不到就 404，不做 SPA 回退
+  location / {
+    try_files $uri $uri/ =404;
+  }
 }
 NGINX
 fi
