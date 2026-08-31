@@ -109,7 +109,7 @@ server {
 
   # 多页静态站：找不到就 404，不做 SPA 回退
   location / {
-    try_files $uri $uri/ =404;
+    try_files \$uri \$uri/ =404;
   }
 }
 NGINX
