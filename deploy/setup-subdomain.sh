@@ -75,8 +75,11 @@ else
 cat >> deploy/nginx.conf <<NGINX
 
 # —— 鼎烽机电商行官网（静态站，文件在宿主机 /home/ubuntu/dingfengweb）——
-# 刻意不 include common.inc：那份是给 maisi 的 SPA 写的，含 /api/ 反代、
-# SPA 回退、以及 1 年 immutable 缓存，对本站三条都不适用。
+# 刻意不 include maisi 的 common.inc / security-headers.inc：
+#   common.inc 含 /api/ 反代到 maisi 后端、SPA 回退、1年 immutable 缓存，本站三条都不适用；
+#   安全头自带一份，避免 maisi 改策略时把本站打挂。
+# 注意：子 location 只写 expires、不写 add_header —— add_header 会清空继承，
+#      expires 不会。这样安全头能正确下发到 /assets/ 与 /data/。
 server {
   listen 443 ssl;
   listen [::]:443 ssl;
@@ -86,31 +89,26 @@ server {
   index index.html;
 
   include /etc/nginx/conf.d/tls.inc;
-  include /etc/nginx/conf.d/security-headers.inc;
 
-  # 本站数据文件较大（catalog.js 约 787KB），单独开 gzip，不影响其它 server
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+  add_header X-Content-Type-Options "nosniff" always;
+  add_header X-Frame-Options "DENY" always;
+  add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+  add_header Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()" always;
+  # 站内脚本已全部外链、字体已本地化，故无需 unsafe-inline / 外部源。
+  # style-src 保留 unsafe-inline：页面仍有内联 <style> 与 style 属性。
+  add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self' data:; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'" always;
+
   gzip on;
   gzip_comp_level 6;
   gzip_min_length 1024;
   gzip_vary on;
   gzip_types text/plain text/css application/javascript application/json image/svg+xml;
 
-  # 资源文件名不带 hash，用短缓存，换图后很快能刷新
-  location /assets/ {
-    expires 7d;
-    add_header Cache-Control "public" always;
-    include /etc/nginx/conf.d/security-headers.inc;
-  }
-  location /data/ {
-    expires 1h;
-    add_header Cache-Control "public" always;
-    include /etc/nginx/conf.d/security-headers.inc;
-  }
-
-  # 多页静态站：找不到就 404，不做 SPA 回退
-  location / {
-    try_files \$uri \$uri/ =404;
-  }
+  location /assets/fonts/ { expires 1y; }
+  location /assets/       { expires 7d; }
+  location /data/         { expires 1h; }
+  location /              { try_files \$uri \$uri/ =404; }
 }
 NGINX
 fi

@@ -118,3 +118,24 @@ docker compose --env-file .env.production -f docker-compose.prod.yml ...
 ```
 
 漏了它，compose 会用空的 POSTGRES_*／JWT_SECRET 重建 db 和 api，导致 maisiie.cn 宕机。
+
+### CSP 与静态资源的两条硬性约束
+
+上线后踩过一次坑，写下来免得重蹈：
+
+**1. 不能有内联 `<script>`。** nginx 下发的 CSP 是 `script-src 'self'`，内联脚本会被浏览器
+直接拒绝执行。后果不是报错页，是**导航栏、页脚、所有 JS 渲染的内容静默消失**。
+每个页面的逻辑都放在 `assets/js/page-*.js` 里，新增页面请照此办理，不要写回内联。
+
+**2. 不能引用外部字体/CDN。** CSP 的 `style-src 'self'` 会挡掉 fonts.googleapis.com，
+而且 Google Fonts 在国内本来就不稳定。字体已本地化到 `assets/fonts/`（latin 子集 202KB），
+由 `assets/css/fonts.css` 声明；中文走系统字体，不需要下载。
+
+内联 `<style>` 是允许的（CSP 保留了 `style-src 'unsafe-inline'`）。
+
+自检：
+
+```bash
+grep -c "<script>" *.html products/*.html        # 必须全是 0
+grep -c "fonts.googleapis" *.html products/*.html # 必须全是 0
+```

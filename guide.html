@@ -5,9 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>水泵选型知识与常见问题 · 流量扬程怎么算 | 鼎烽机电商行</title>
 <meta name="description" content="水泵选型入门：流量和扬程怎么算、220V还是380V、口径怎么定、潜水泵和自吸泵怎么选、深井泵怎么量井、消防泵型号怎么读、水泵不上水的原因。佛山南海鼎烽机电商行 13690528818。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="stylesheet" href="assets/css/product.css">
 <style>
@@ -229,20 +227,6 @@
 </div>
 
 <script src="assets/js/site.js"></script>
-<script>
-DF.init('选型知识');
-DF.foot();
-var links = [].slice.call(document.querySelectorAll('#toc a'));
-var arts = links.map(function (a) { return document.querySelector(a.getAttribute('href')) });
-var io = new IntersectionObserver(function (es) {
-  es.forEach(function (e) {
-    if (e.intersectionRatio > 0) {
-      var i = arts.indexOf(e.target);
-      links.forEach(function (a, j) { a.classList.toggle('on', j === i) });
-    }
-  });
-}, { rootMargin: '-80px 0px -70% 0px' });
-arts.forEach(function (a) { io.observe(a) });
-</script>
+<script src="assets/js/page-guide.js"></script>
 </body>
 </html>
