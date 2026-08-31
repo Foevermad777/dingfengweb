@@ -19,7 +19,9 @@ set -euo pipefail
 SUB="${1:?用法: $0 <子域名>   例: $0 dingfeng.maisiie.cn}"
 STACK=/home/ubuntu/maisisystem
 SITE=/home/ubuntu/dingfengweb
-COMPOSE="docker compose -f docker-compose.prod.yml"
+COMPOSE="docker compose --env-file .env.production -f docker-compose.prod.yml"
+# ↑ 必须带 --env-file：这套栈的 POSTGRES_* / JWT_SECRET 都在 .env.production 里，
+#   不带的话 up 会用空变量重建 db 和 api，导致 api 起不来。
 TS=$(date +%Y%m%d-%H%M%S)
 BK=~/backup-"$TS"
 
@@ -53,8 +55,9 @@ else
   grep -n "server_name.*$SUB" deploy/nginx.conf | head -1 | sed 's/^/  /'
 fi
 
-echo "▶ 4/6 重建 web 容器（maisiie.cn 会短暂中断约 2 秒）"
-$COMPOSE up -d web
+echo "▶ 4/6 重建 web 容器（会连带重建 db/api，maisiie.cn 中断约 20 秒）"
+[ -f .env.production ] || { echo "✗ 缺 .env.production，中止"; exit 1; }
+$COMPOSE up -d
 sleep 3
 $COMPOSE exec -T web nginx -t
 
